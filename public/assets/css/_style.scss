@@ -1,0 +1,113 @@
+@import 'variables';
+
+/* ___________ Base styles ___________ */
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: $navyBlue;
+  background-color: #ffffff;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  outline: none !important;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+input:focus, input:hover {
+  box-shadow: none !important;
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+button {
+  box-shadow: none;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F2F2F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $navyBlue;
+}
+
+@media only screen and (max-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+}
+
+/* Selection */
+::selection {
+  background: $navyBlue; /* WebKit/Blink Browsers */
+  color: #F2F2F2;
+}
+
+::-moz-selection {
+  background: $navyBlue; /* Gecko Browsers */
+  color: #F2F2F2;
+}
+
+/* Styles */
+footer {
+
+  .social-medias {
+
+    .social-media-item {
+
+      a {
+
+        .social-media-icon {
+          fill: #ffffff;
+          transition: .3s ease-in-out;
+        }
+
+        &:hover {
+
+          .social-media-icon {
+            fill: $lightGreen;
+          }
+        }
+      }
+    }
+  }
+}

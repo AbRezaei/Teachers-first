@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teachers first</title>
+
+    <!--responsive-->
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <!--keywords-->
+    <meta name=description content="">
+    <meta name=keywords itemprop=keywords content="">
+
+    <!--icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+
+    <!--colors-->
+    <meta name="msapplication-TileColor" content="#131d2c">
+    <meta name="msapplication-TileImage" content="./assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#131d2c">
+
+    <!--open graph -->
+    <meta property=og:locale content=en_US>
+    <meta property=og:locale:alternate content=en_US>
+    <meta property=og:type content="website">
+    <meta property=og:title content="">
+    <meta property=og:description content="">
+    <meta property=og:url content="">
+    <meta property=og:site_name content="">
+    <meta property=og:image content="">
+
+    <!--twitter seo-->
+    <meta name=twitter:card content="">
+    <meta name=twitter:description content="">
+    <meta name=twitter:title content="">
+    <meta name="twitter:image:src" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+
+    <!--similar site-->
+    <link rel=canonical href="">
+    <link rel=canonical href="">
+
+    <!--ios-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <!--styles-->
+    <link rel="stylesheet" href="./assets/css/plugins.css">
+    <link rel="stylesheet" href="./dist/css/app.css">
+</head>
+<body x-data
+      x-on:resize.window="$store.page.resized()"
+      x-on:scroll.window="$store.page.scrolled()">
+
+<!-- Main nav -->
+<nav class="fixed lg:sticky top-0 lg:-top-12 left-0 w-full h-screen lg:h-auto overflow-y-auto py-12 lg:py-0 text-white font-medium lg:font-light xl:font-medium bg-navyBlue duration-300"
+     style="z-index: 1000"
+     x-bind:style="{transform: $store.page.mobileMode && !$store.page.showHamburgerMenu ? 'translateX(100%)' : 'translateX(0)'}">
+    <div class="container">
+        <div class="flex flex-col pt-12 lg:pt-0">
+
+            <div class="flex flex-row flex-wrap lg:flex-nowrap items-center justify-center lg:justify-end order-3 lg:order-1">
+
+                <div class="w-full text-center lg:w-auto mb-8 lg:mb-0">
+
+                    <span class="mr-2">GET IN TOUCH</span>
+                    <a href="tel:0330156408" class="text-lightGreen transition duration-300">0330 156 408</a>
+                    <span class="mx-2">|</span>
+                    <a href="mailto:hello@teacherfirst.co.uk" class="hover:text-lightGreen transition duration-300"><u>Email</u></a>
+
+                </div>
+                <a href="#" class="bg-blue px-6 py-2 lg:ml-8 hover:opacity-90 transition duration-300">AGENCY MODE</a>
+
+            </div>
+            <hr class="order-2 mb-8 lg:mb-0" style="border-color: #1e3353">
+            <div class="flex flex-row items-center justify-between lg:py-4 order-1 lg:order-3 mb-12 lg:mb-0">
+
+                <template x-if="!$store.page.mobileMode">
+                    <a href="#">
+                        <img class="w-auto h-10 lg:h-8 xl:h-10" src="./assets/images/svg/logo.svg" alt="Logo icon">
+                    </a>
+                </template>
+                <ul class="flex flex-row flex-wrap lg:flex-nowrap">
+
+                    <li class="w-full lg:w-auto mb-1 lg:ml-3 xl:ml-6">
+                        <a href="#" class="inline-block py-2 hover:text-lightGreen transition duration-300">SERVICES</a>
+                    </li>
+                    <li class="w-full lg:w-auto mb-1 lg:ml-3 xl:ml-6">
+                        <a href="#" class="inline-block py-2 hover:text-lightGreen transition duration-300">ABOUT US</a>
+                    </li>
+                    <li class="w-full lg:w-auto mb-1 lg:ml-3 xl:ml-6">
+                        <a href="#" class="inline-block py-2 hover:text-lightGreen transition duration-300">THE
+                            ASSEMBLY</a>
+                    </li>
+                    <li class="w-full lg:w-auto mb-1 lg:ml-3 xl:ml-6">
+                        <a href="#" class="inline-block py-2 hover:text-lightGreen transition duration-300">INFO &
+                            RESOURCES</a>
+                    </li>
+                    <li class="w-full lg:w-auto mb-1 lg:ml-3 xl:ml-6">
+                        <a href="#" class="inline-block py-2 hover:text-lightGreen transition duration-300">NEWS &
+                            EVENTS</a>
+                    </li>
+                    <li class="w-full lg:w-auto mb-1 lg:ml-3 xl:ml-6">
+                        <a href="#" class="inline-block py-2 hover:text-lightGreen transition duration-300">CONTACT</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</nav>
+<!-- Mobile nav -->
+<template x-if="$store.page.mobileMode">
+    <nav class="fixed top-0 left-0 w-full bg-navyBlue py-4" style="z-index: 1001">
+        <div class="container">
+            <div class="flex flex-row justify-between items-center">
+
+                <a class="" href="#">
+                    <img class="w-auto h-10" src="./assets/images/svg/logo.svg" alt="Logo icon">
+                </a>
+                <button class="relative w-10 h-10 flex flex-row items-center justify-center rounded-full border-2 border-white"
+                        x-on:click="$store.page.toggleHamburgerMenu()">
+
+                    <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 transition duration-300"
+                         x-bind:class="{'opacity-0': $store.page.showHamburgerMenu}"
+                         src="./assets/images/svg/burger-menu.svg"
+                         alt="Burger menu icon">
+                    <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 transition duration-300"
+                         x-bind:class="{'opacity-0': !$store.page.showHamburgerMenu}"
+                         src="./assets/images/svg/cross-burger-menu.svg"
+                         alt="Close burger menu icon">
+
+                </button>
+
+            </div>
+        </div>
+    </nav>
+</template>
+<!-- Header -->
+<header class="h-screen text-white bg-cover bg-center bg-no-repeat" style="background-image: url('./assets/images/header-bg.png')">
+    <div class="flex flex-row flex-wrap lg:flex-nowrap justify-between h-full">
+
+        <div class="w-full lg:w-1/2 xl:w-1/3 px-4 pt-24 pb-4 lg:p-12">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl font-normal leading-tight">Transforming our industry forever <b>for you</b></h1>
+        </div>
+        <div class="w-full lg:w-1/2">
+            <div class="grid grid-cols-2 h-full">
+
+                <div class="flex flex-col justify-between p-4 lg:p-6 bg-pink">
+
+                    <h2 class="text-md md:text-2xl lg:text-3xl font-normal leading-tight">We are your voice</h2>
+                    <img class="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-24 h-auto" src="./assets/images/svg/we-are-your-voice.svg" alt="Icon">
+
+                </div>
+                <div class="flex flex-col justify-between p-4 lg:p-6 bg-lightGreen">
+
+                    <h2 class="text-md md:text-2xl lg:text-3xl font-normal leading-tight">Rebuilding trust</h2>
+                    <img class="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-24 h-auto" src="assets/images/svg/rebuilding.svg" alt="Icon">
+
+                </div>
+                <div class="flex flex-col justify-between p-4 lg:p-6 bg-blue">
+
+                    <h2 class="text-md md:text-2xl lg:text-3xl font-normal leading-tight">Revolutionising payroll</h2>
+                    <img class="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-24 h-auto" src="assets/images/svg/revolutionising.svg" alt="Icon">
+
+                </div>
+                <div class="flex flex-col justify-between p-4 lg:p-6 bg-navyBlue">
+
+                    <h2 class="text-md md:text-lg lg:text-xl font-normal leading-tight"><u>Empowering supply teachers with</u> a dedicated platform, full of accurate information</h2>
+                    <img class="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-24 h-auto" src="./assets/images/svg/empowering.svg" alt="Icon">
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<section class="py-16 md:py-20 lg:py-24">
+    <div class="container">
+        <div class="xl:w-5/6 mx-auto text-center">
+
+            <h2 class="text-xl md:text-2xl lg:text-3xl font-medium leading-tight mb-12 md:mb-16 lg:mb-20">“We have had time to think & digest some important things. Your voice and opinions truly matter to us. <b>We listened! So we have launched 'The Assembly"</b></h2>
+            <h3 class="text-3xl md:text-4xl lg:text-5xl text-blue font-bold leading-none mb-10 md:mb-16 lg:mb-20">THE ASSEMBLY</h3>
+            <div class="flex flex-row flex-wrap justify-center">
+
+                <a href="#" class="bg-pink text-base md:text-md lg:text-lg text-white font-bold py-4 px-8 rounded-md hover:text-white hover:opacity-90 transition duration-300 mx-2 mb-2">BECOME A MEMBER</a>
+                <a href="#" class="bg-pink text-base md:text-md lg:text-lg text-white font-bold py-4 px-8 rounded-md hover:text-white hover:opacity-90 transition duration-300 mx-2 mb-2">TAKE OUR ETHICS SURVEY</a>
+                <a href="#" class="bg-pink text-base md:text-md lg:text-lg text-white font-bold py-4 px-8 rounded-md hover:text-white hover:opacity-90 transition duration-300 mx-2 mb-2">WATCH OUR STORY</a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="py-16 md:py-20 lg:py-24" style="background-color: #F2F2F2">
+    <div class="container">
+
+        <h2 class="text-xl md:text-2xl lg:text-3xl font-medium leading-tight mb-1">Information + resource</h2>
+        <p class="text-base md:text-md lg:text-lg font-medium mb-8 lg:mb-12">Empowering supply teachers with a dedicated platform, full of accurate information and </p>
+        <ul class="grid lg:grid-cols-2 gap-4 xl:gap-8 mb-16">
+
+            <li class="flex flex-row flex-wrap sm:flex-nowrap">
+
+                <a href="#" class="w-full sm:w-1/3 rounded-tl-md rounded-tr-md sm:rounded-tr-none sm:rounded-bl-md bg-cover bg-center bg-no-repeat" style="background-image: url('./assets/images/cart-img1.png'); min-height: 12.5rem"></a>
+                <div class="w-full sm:w-2/3 flex flex-col justify-between bg-white rounded-br-md sm:rounded-bl-none sm:rounded-tr-md px-4 py-4 lg:py-6">
+
+                    <div class="flex flex-row items-start justify-between">
+
+                        <a href="#" class="text-lg md:text-xl xl:text-2xl font-medium leading-tight hover:text-lightGreen transition duration-300">How to make umbrella work for you</a>
+                        <div style="min-width: 1.5rem;">
+                            <img class="w-6 h-6" src="./assets/images/svg/category1.svg" alt="Category icon">
+                        </div>
+
+                    </div>
+                    <a href="#" class="text-base md:text-md lg:text-lg font-medium text-pink hover:text-lightGreen transition duration-300">Let us guide you to a better life</a>
+
+                </div>
+
+            </li>
+            <li class="flex flex-row flex-wrap sm:flex-nowrap">
+
+                <a href="#" class="w-full sm:w-1/3 rounded-tl-md rounded-tr-md sm:rounded-tr-none sm:rounded-bl-md bg-cover bg-center bg-no-repeat" style="background-image: url('./assets/images/cart-img2.png'); min-height: 12.5rem"></a>
+                <div class="w-full sm:w-2/3 flex flex-col justify-between bg-white rounded-br-md sm:rounded-bl-none sm:rounded-tr-md px-4 py-4 lg:py-6">
+
+                    <div class="flex flex-row items-start justify-between">
+
+                        <a href="#" class="text-lg md:text-xl xl:text-2xl font-medium leading-tight hover:text-lightGreen transition duration-300">Customer Portal</a>
+                        <div style="min-width: 1.5rem;">
+                            <img class="w-6 h-6" src="./assets/images/svg/category2.svg" alt="Category icon">
+                        </div>
+
+                    </div>
+                    <a href="#" class="text-base md:text-md lg:text-lg font-medium text-pink hover:text-lightGreen transition duration-300">Access all your data in one place</a>
+
+                </div>
+
+            </li>
+            <li class="flex flex-row flex-wrap sm:flex-nowrap">
+
+                <a href="#" class="w-full sm:w-1/3 rounded-tl-md rounded-tr-md sm:rounded-tr-none sm:rounded-bl-md bg-cover bg-center bg-no-repeat" style="background-image: url('./assets/images/cart-img3.png'); min-height: 12.5rem"></a>
+                <div class="w-full sm:w-2/3 flex flex-col justify-between bg-white rounded-br-md sm:rounded-bl-none sm:rounded-tr-md px-4 py-4 lg:py-6">
+
+                    <div class="flex flex-row items-start justify-between">
+
+                        <a href="#" class="text-lg md:text-xl xl:text-2xl font-medium leading-tight hover:text-lightGreen transition duration-300">The Assembly</a>
+                        <div style="min-width: 1.5rem;">
+                            <img class="w-6 h-6" src="./assets/images/svg/category3.svg" alt="Category icon">
+                        </div>
+
+                    </div>
+                    <a href="#" class="text-base md:text-md lg:text-lg font-medium text-pink hover:text-lightGreen transition duration-300">Knowledge base & member forum</a>
+
+                </div>
+
+            </li>
+            <li class="flex flex-row flex-wrap sm:flex-nowrap">
+
+                <a href="#" class="w-full sm:w-1/3 rounded-tl-md rounded-tr-md sm:rounded-tr-none sm:rounded-bl-md bg-cover bg-center bg-no-repeat" style="background-image: url('./assets/images/cart-img4.png'); min-height: 12.5rem"></a>
+                <div class="w-full sm:w-2/3 flex flex-col justify-between bg-white rounded-br-md sm:rounded-bl-none sm:rounded-tr-md px-4 py-4 lg:py-6">
+
+                    <div class="flex flex-row items-start justify-between">
+
+                        <a href="#" class="text-lg md:text-xl xl:text-2xl font-medium leading-tight hover:text-lightGreen transition duration-300">Teachers First pay calculator</a>
+                        <div style="min-width: 1.5rem;">
+                            <img class="w-6 h-6" src="./assets/images/svg/category4.svg" alt="Category icon">
+                        </div>
+
+                    </div>
+                    <a href="#" class="text-base md:text-md lg:text-lg font-medium text-pink hover:text-lightGreen transition duration-300">Interactive live pay illustrator</a>
+
+                </div>
+
+            </li>
+
+        </ul>
+        <div class="flex flex-row flex-wrap items-center justify-between mb-6">
+
+            <h5 class="text-xl md:text-2xl lg:text-3xl font-bold">Any questions?</h5>
+            <h6 class="text-md md:text-lg lg:text-xl font-medium">Have an emergency? We are here to help!</h6>
+
+        </div>
+        <div class="flex flex-row flex-wrap lg:flex-nowrap">
+
+            <div class="w-full lg:w-1/2 lg:mr-2 mb-2 lg:mb-0">
+                <input type="email" id="question" class="block text-md font-normal w-full bg-white h-14 px-4 rounded-md border placeholder-navyBlue" placeholder="Type in your question">
+            </div>
+            <div class="w-full lg:w-1/2 flex flex-row flex-wrap sm:flex-nowrap items-center">
+
+                <input type="email" id="question-email" class="w-full sm:w-auto flex-grow text-md font-normal bg-white h-14 px-4 rounded-md border placeholder-navyBlue sm:mr-2 mb-2 sm:mb-0" placeholder="Your email">
+                <button class="bg-pink text-white font-normal h-14 sm:h-full px-12 rounded-md hover:opacity-90 transition duration-300">SUBMIT</button>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="py-8 md:py-10 lg:py-12">
+    <div class="container">
+        <div class="flex flex-row flex-wrap lg:flex-nowrap justify-between">
+
+            <div class="w-full md:w-1/2 lg:w-1/6 mb-14 md:mb-8 lg:mb-6 flex flex-col justify-center">
+                <img class="w-auto h-24" src="./assets/images/svg/trustpilot.svg" alt="Trust pilot image">
+            </div>
+            <div class="w-full md:w-1/2 lg:w-2/6 mb-10 md:mb-8 lg:mb-6">
+
+                <div class="flex flex-row justify-between items-center mb-3">
+
+                    <ul class="flex flex-row">
+
+                        <li>
+                            <img class="w-6 h-6" src="./assets/images/svg/star.svg" alt="Star icon">
+                        </li>
+                        <li>
+                            <img class="w-6 h-6" src="./assets/images/svg/star.svg" alt="Star icon">
+                        </li>
+                        <li>
+                            <img class="w-6 h-6" src="./assets/images/svg/star.svg" alt="Star icon">
+                        </li>
+                        <li>
+                            <img class="w-6 h-6" src="./assets/images/svg/star.svg" alt="Star icon">
+                        </li>
+                        <li>
+                            <img class="w-6 h-6" src="./assets/images/svg/star.svg" alt="Star icon">
+                        </li>
+
+                    </ul>
+                    <div class="text-xs font-normal" style="color: #73738F">
+                        <span>21</span> <span>Sept</span> <span>2021</span>
+                    </div>
+
+                </div>
+                <h6 class="text-md font-bold overflow-ellipsis truncate mb-1">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</h6>
+                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+
+            </div>
+            <div class="w-full md:w-1/2 lg:w-2/6 mb-10 md:mb-8 lg:mb-6">
+
+                <div class="flex flex-row justify-between items-center mb-3">
+
+                    <ul class="flex flex-row">
+
+                        <li>
+                            <img class="w-6 h-6" src="./assets/images/svg/star.svg" alt="Star icon">
+                        </li>
+                        <li>
+                            <img class="w-6 h-6" src="./assets/images/svg/star.svg" alt="Star icon">
+                        </li>
+                        <li>
+                            <img class="w-6 h-6" src="./assets/images/svg/star.svg" alt="Star icon">
+                        </li>
+                        <li>
+                            <img class="w-6 h-6" src="./assets/images/svg/star.svg" alt="Star icon">
+                        </li>
+                        <li>
+                            <img class="w-6 h-6" src="./assets/images/svg/star.svg" alt="Star icon">
+                        </li>
+
+                    </ul>
+                    <div class="text-xs font-normal" style="color: #73738F">
+                        <span>21</span> <span>Sept</span> <span>2021</span>
+                    </div>
+
+                </div>
+                <h6 class="text-md font-bold overflow-ellipsis truncate mb-1">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</h6>
+                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="bg-navyBlue text-white font-normal">
+    <div class="container">
+
+        <div class="flex flex-row flex-wrap lg:flex-nowrap justify-between py-10 lg:py-12">
+
+            <div class="w-full lg:w-1/3 flex flex-col justify-between mb-12 lg: mb-0">
+
+                <a href="#" class="inline-block mb-6">
+                    <img class="w-auto h-12 lg:h-12 xl:h-14" src="./assets/images/svg/logo.svg" alt="Logo icon">
+                </a>
+                <ul class="social-medias flex flex-row">
+
+                    <li class="social-media-item mr-2">
+                        <a href="#" class="inline-block">
+                            <span class="inline-block w-10 h-10">
+                                <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none">
+                                    <path class="social-media-icon" d="M24.6057 39.6445V25.0715H29.1622L29.8275 19.3197H24.5653C24.4993 18.0096 24.4993 16.6968 24.5653 15.3867C24.6661 14.5026 25.4121 14.1164 26.2992 14.1164H29.6864V8.14101C27.1016 8.14339 24.5193 8.30627 21.9544 8.62879C19.1015 9.15723 17.7003 11.2709 17.5994 14.3501C17.549 15.9558 17.5994 17.5717 17.5994 19.3095H14.3433V24.9901H17.4986V40C9.63558 39.5732 0.492247 32.1649 0.00836663 20.8237C-0.140062 15.6405 1.69114 10.5978 5.124 6.73624C8.55685 2.87471 13.3293 0.489017 18.4563 0.0718729C21.1063 -0.155218 23.7745 0.157138 26.3024 0.99036C28.8302 1.82358 31.1661 3.16088 33.1711 4.92234C35.1761 6.68379 36.8093 8.8336 37.9736 11.2441C39.1379 13.6545 39.8096 16.2763 39.9487 18.9537C40.7149 29.7563 32.7711 38.2217 24.6057 39.6445Z"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="social-media-item mr-2">
+                        <a href="#" class="inline-block">
+                            <span class="inline-block w-10 h-10">
+                                <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none">
+                                    <path class="social-media-icon" d="M39.9996 20.0807C39.9836 24.032 38.7976 27.89 36.5913 31.1679C34.3849 34.4459 31.257 36.9968 27.6023 38.4988C23.9476 40.0008 19.9298 40.3864 16.0561 39.6073C12.1824 38.8281 8.6263 36.919 5.83652 34.1208C3.04675 31.3225 1.14834 27.7606 0.380883 23.8846C-0.386578 20.0085 0.011305 15.992 1.5243 12.3418C3.03729 8.6916 5.5976 5.57153 8.88214 3.37503C12.1667 1.17852 16.0283 0.00414167 19.9795 0.000126342C22.6163 -0.0092575 25.2288 0.504173 27.666 1.51075C30.1031 2.51732 32.3165 3.99709 34.1782 5.86443C36.0399 7.73176 37.5129 9.9496 38.5121 12.3898C39.5113 14.8299 40.0169 17.4439 39.9996 20.0807ZM19.8384 6.45164H13.034C12.1862 6.3896 11.3349 6.50962 10.5374 6.80382C9.73983 7.09803 9.01447 7.55967 8.41004 8.15743C7.80561 8.75518 7.33609 9.4753 7.03304 10.2695C6.72999 11.0638 6.60042 11.9137 6.65303 12.7621C6.65303 17.2581 6.65303 21.7508 6.65303 26.2401C6.65303 30.2723 9.09252 32.7017 13.1348 32.7118C17.5904 32.7118 22.0427 32.7118 26.4916 32.7118C30.4331 32.7118 32.8625 30.3731 32.9129 26.4416C32.9734 21.7844 32.9633 17.127 32.9129 12.4698C32.9405 11.6594 32.7995 10.8522 32.4989 10.0992C32.1982 9.34623 31.7446 8.66397 31.1665 8.09541C30.5885 7.52685 29.8987 7.08433 29.1408 6.7962C28.383 6.50806 27.5735 6.38043 26.7638 6.42137L19.8384 6.45164Z"/>
+                                    <path class="social-media-icon" d="M19.8387 30.0405H13.0344C12.539 30.0936 12.038 30.0359 11.5678 29.8714C11.0975 29.7069 10.6698 29.4398 10.3156 29.0895C9.96137 28.7391 9.6896 28.3143 9.51995 27.8459C9.35031 27.3775 9.28705 26.8772 9.33477 26.3813C9.33477 21.8585 9.33477 17.3289 9.33477 12.7926C9.33477 10.3632 10.6251 9.0729 13.0847 9.06282C17.621 9.06282 22.1539 9.06282 26.6834 9.06282C27.1801 9.01589 27.6809 9.08053 28.1493 9.25208C28.6177 9.42362 29.0418 9.69758 29.3906 10.0542C29.7395 10.4107 30.0042 10.841 30.1654 11.313C30.3267 11.785 30.3803 12.2871 30.3225 12.7825C30.3225 17.265 30.3225 21.7544 30.3225 26.2504C30.3225 28.7605 29.0322 30.0304 26.502 30.0405H19.8387ZM19.8387 26.4015C21.1808 26.3995 22.4922 26.0001 23.6075 25.2536C24.7229 24.5072 25.5921 23.447 26.1057 22.207C26.6193 20.9671 26.7542 19.603 26.4933 18.2865C26.2325 16.97 25.5876 15.7604 24.64 14.81C23.6924 13.8596 22.4846 13.2109 21.1689 12.9462C19.8532 12.6814 18.4886 12.8123 17.2472 13.3222C16.0057 13.8321 14.9431 14.6983 14.1934 15.8114C13.4436 16.9245 13.0403 18.2348 13.0344 19.5769C13.029 20.4729 13.2012 21.361 13.541 22.1901C13.8809 23.0191 14.3815 23.7727 15.0142 24.4073C15.6468 25.0418 16.3989 25.5448 17.227 25.8871C18.055 26.2294 18.9427 26.4042 19.8387 26.4015ZM28.5988 12.9135C28.6047 12.5697 28.5084 12.2321 28.322 11.9433C28.1356 11.6544 27.8676 11.4275 27.5519 11.2913C27.2363 11.1552 26.8873 11.1157 26.5493 11.1784C26.2112 11.241 25.8995 11.4028 25.6536 11.643C25.4077 11.8833 25.2387 12.1911 25.1682 12.5276C25.0977 12.864 25.1287 13.2139 25.2575 13.5327C25.3862 13.8514 25.6068 14.1247 25.8912 14.3178C26.1757 14.5109 26.5111 14.6152 26.8548 14.6173C27.3104 14.6174 27.748 14.439 28.0739 14.1206C28.3998 13.8022 28.5882 13.369 28.5988 12.9135Z"/>
+                                    <path class="social-media-icon" d="M23.9714 19.6677C23.9668 20.2117 23.8551 20.7495 23.6426 21.2504C23.4301 21.7513 23.121 22.2053 22.733 22.5868C22.345 22.9682 21.8857 23.2696 21.3812 23.4735C20.8768 23.6774 20.3371 23.7801 19.793 23.7755C19.249 23.7708 18.7111 23.6592 18.2102 23.4467C17.7093 23.2342 17.2552 22.9251 16.8738 22.5371C16.4923 22.149 16.191 21.6896 15.9871 21.1852C15.7832 20.6807 15.6806 20.1411 15.6852 19.597C15.6838 19.0518 15.7909 18.5116 16.0001 18.0081C16.2094 17.5047 16.5166 17.0478 16.904 16.6641C17.2914 16.2805 17.7513 15.9778 18.2567 15.7735C18.7622 15.5691 19.3033 15.4673 19.8485 15.474C20.9501 15.4872 22.0017 15.9357 22.7741 16.7212C23.5464 17.5068 23.9768 18.566 23.9714 19.6677Z"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="social-media-item mr-2">
+                        <a href="#" class="inline-block">
+                            <span class="inline-block w-10 h-10">
+                                <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none">
+                                    <path class="social-media-icon" d="M39.9995 20.0809C39.9835 24.0313 38.798 27.8884 36.5925 31.1659C34.387 34.4433 31.2603 36.9942 27.6068 38.4967C23.9533 39.9993 19.9366 40.3864 16.0635 39.6088C12.1903 38.8313 8.63415 36.924 5.84359 34.1278C3.05303 31.3316 1.15306 27.7716 0.383334 23.8969C-0.386395 20.0221 0.00859876 16.0064 1.5185 12.3559C3.0284 8.70537 5.58557 5.58386 8.86744 3.38494C12.1493 1.18602 16.0089 0.00826718 19.9593 0.000258261C22.5982 -0.0131699 25.2135 0.497174 27.6536 1.50207C30.0937 2.50696 32.31 3.98631 34.1741 5.85419C36.0382 7.72207 37.513 9.94136 38.513 12.3835C39.513 14.8256 40.0182 17.442 39.9995 20.0809ZM21.2112 29.5507C21.2112 26.9358 21.2112 24.3918 21.2112 21.8476C21.1988 21.3146 21.253 20.7821 21.3727 20.2625C21.5135 19.696 21.8412 19.1936 22.3029 18.8364C22.7645 18.4791 23.3331 18.288 23.9168 18.2939C24.5021 18.276 25.0741 18.4706 25.5269 18.8418C25.9798 19.213 26.2829 19.7356 26.3802 20.313C26.5217 21.082 26.5826 21.8637 26.562 22.6452C26.562 24.937 26.562 27.2288 26.562 29.5408H31.7815C31.7815 25.977 32.0238 22.4735 31.7108 19.0005C31.4382 15.9718 28.9547 14.2252 25.8855 14.2454C25.0197 14.2418 24.1627 14.4197 23.3698 14.7675C22.5769 15.1152 21.8656 15.6252 21.2818 16.2646L21.1304 14.4877H15.9613V29.5307L21.2112 29.5507ZM8.28852 14.4068V29.4903H12.9023V14.4271L8.28852 14.4068ZM10.449 12.4988C10.8179 12.5291 11.189 12.4845 11.5402 12.3677C11.8914 12.2509 12.2154 12.0642 12.4926 11.819C12.7698 11.5739 12.9946 11.2751 13.1535 10.9408C13.3124 10.6066 13.4021 10.2436 13.4172 9.87381C13.4247 9.51265 13.3575 9.15387 13.22 8.81985C13.0824 8.48584 12.8774 8.1839 12.6177 7.93277C12.358 7.68164 12.0493 7.48678 11.7109 7.36044C11.3725 7.2341 11.0116 7.17897 10.6509 7.1985C10.2827 7.14908 9.90831 7.17684 9.55145 7.28009C9.19459 7.38333 8.86315 7.5598 8.57823 7.79819C8.2933 8.03657 8.06115 8.33178 7.89655 8.66482C7.73195 8.99786 7.63851 9.36144 7.62219 9.73258C7.61219 10.1047 7.67878 10.4748 7.81783 10.8201C7.95688 11.1653 8.16542 11.4784 8.43051 11.7397C8.69559 12.001 9.01156 12.205 9.3588 12.3391C9.70603 12.4732 10.0771 12.5344 10.449 12.519V12.4988Z"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="social-media-item mr-2">
+                        <a href="#" class="inline-block">
+                            <span class="inline-block w-10 h-10">
+                                <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none">
+                                    <path class="social-media-icon" d="M20.3619 0.00115385C25.7032 0.13484 30.7722 2.36979 34.4539 6.21435C38.1355 10.0589 40.1282 15.1981 39.9936 20.5015C39.8589 25.8048 37.608 30.8377 33.7359 34.4932C29.8639 38.1487 24.6878 40.1273 19.3465 39.9936C8.38083 39.7517 -0.219121 30.5575 0.00425451 19.2866C0.194611 14.071 2.42961 9.13559 6.23266 5.53283C10.0357 1.93007 15.1058 -0.0548543 20.3619 0.00115385ZM20.0167 28.0976C22.7987 28.0976 25.5808 28.0976 28.3628 28.0976C28.8842 28.134 29.4074 28.0585 29.8966 27.8759C30.3859 27.6933 30.8297 27.4079 31.1979 27.0395C31.566 26.6711 31.8498 26.2282 32.0299 25.741C32.21 25.2538 32.2821 24.7339 32.2414 24.2165C32.2414 21.1316 32.2414 18.0365 32.2414 14.9516C32.2849 14.4331 32.2152 13.9115 32.0371 13.4221C31.8591 12.9328 31.5769 12.4872 31.2097 12.116C30.8425 11.7447 30.3991 11.4564 29.9096 11.2708C29.42 11.0851 28.8959 11.0065 28.373 11.0401C22.7818 11.0401 17.1805 11.0401 11.569 11.0401C11.0467 11.0036 10.5226 11.0794 10.0326 11.2626C9.54255 11.4458 9.09819 11.7322 8.72987 12.1017C8.36155 12.4712 8.07798 12.9153 7.89858 13.4037C7.71918 13.8921 7.64817 14.4134 7.69042 14.9316C7.69042 18.0165 7.69042 21.1114 7.69042 24.1963C7.64798 24.7246 7.72259 25.2557 7.90899 25.7523C8.0954 26.2489 8.38909 26.699 8.76941 27.0708C9.14972 27.4427 9.60745 27.7273 10.1104 27.9047C10.6134 28.0821 11.1494 28.1479 11.6807 28.0976C14.4628 28.1178 17.2448 28.0976 20.0167 28.0976Z"/>
+                                    <path class="social-media-icon" d="M17.3447 15L24.0947 19.4399L17.3447 23.8899V15Z"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="social-media-item mr-2">
+                        <a href="#" class="inline-block">
+                            <span class="inline-block w-10 h-10">
+                                <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none">
+                                    <path class="social-media-icon" d="M39.9999 19.9503C40.0098 23.9012 38.8492 27.7664 36.6647 31.0584C34.4802 34.3504 31.3696 36.9215 27.7253 38.4476C24.0811 39.9737 20.0665 40.3864 16.1881 39.6334C12.3096 38.8804 8.74109 36.9954 5.9327 34.2165C3.1243 31.4376 1.20189 27.8893 0.40797 24.019C-0.385946 20.1487 -0.0157964 16.1299 1.47175 12.4698C2.95929 8.80965 5.49758 5.67197 8.76634 3.45283C12.0351 1.23369 15.8879 0.0325252 19.8386 0.000651055C22.4744 -0.0206138 25.0884 0.479231 27.5302 1.47165C29.9721 2.46406 32.1937 3.92954 34.0673 5.78349C35.9409 7.63744 37.4296 9.84337 38.4477 12.2746C39.4659 14.7059 39.9934 17.3145 39.9999 19.9503ZM11.139 32.6217L11.5826 32.682C12.3487 32.309 13.135 31.9765 13.8709 31.5531C14.5446 31.089 15.3069 30.7688 16.11 30.6127C16.9131 30.4566 17.7397 30.4678 18.5382 30.6457C19.5939 30.8471 20.6781 30.8471 21.7338 30.6457C26.6834 29.8796 30.3124 27.2991 32.0463 22.5209C32.8155 20.5434 33.0011 18.3865 32.5812 16.3066C32.1613 14.2268 31.1535 12.3111 29.6774 10.7869C28.4413 9.43962 26.9425 8.35978 25.2733 7.61356C23.6041 6.86733 21.7998 6.47065 19.9716 6.44798C18.1433 6.42532 16.3298 6.77702 14.6426 7.48164C12.9554 8.18626 11.4303 9.22875 10.1612 10.545C6.40115 14.4462 5.61487 20.5046 8.79027 24.8393C10.5443 27.2082 12.1169 29.406 11.139 32.6217Z"/>
+                                    <path class="social-media-icon" d="M21.1791 22.6116L17.8424 19.0129L12.7013 22.0371L12.54 21.8656L18.8807 15.0309C19.7174 16.039 20.4735 17.0472 21.1993 17.9443C21.7033 18.5996 22.2074 18.5592 22.8828 18.156C24.2516 17.3086 25.6959 16.5897 27.1973 16.0087L21.1791 22.6116Z"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="w-full lg:w-1/3 lg:pt-3 mb-12 lg: mb-0">
+
+                <h6 class="text-lg font-bold mb-4">Contact us</h6>
+                <div class="mb-2">
+                    <a href="tel:0330156408" class="text-lightGreen transition duration-300">0330 156 408</a>
+                </div>
+                <div class="mb-2">
+                    <a href="mailto:hello@teacherfirst.co.uk" class="hover:text-lightGreen transition duration-300">hello@teacherfirst.co.uk</a>
+                </div>
+                <div>
+                    <span>3rd Floor Pinnacle House,Harborne Rd, BirminghamB15 3AA</span>
+                </div>
+
+            </div>
+            <div class="w-full lg:w-1/3 lg:pt-3">
+                <form action="#" autocomplete="off">
+
+                    <h6 class="text-lg font-normal mb-4">Stay connected</h6>
+                    <label for="email" class="block mb-2">Join our mailing list to keep up-to-date with our latest news and</label>
+                    <input type="email" id="email" class="block w-full h-12 px-4 rounded-md border mb-1 placeholder-white" style="background-color: #0E141F" placeholder="Your email">
+                    <button class="bg-pink text-sm font-normal h-11 px-6 rounded-md hover:opacity-90 transition duration-300">SUBMIT</button>
+
+                </form>
+            </div>
+
+        </div>
+        <hr style="border-color: #1e3353">
+        <div class="flex flex-row flex-wrap lg:flex-nowrap justify-between items-center pt-3 pb-6">
+
+            <ul class="w-full md:w-auto flex flex-row justify-center mb-6 lg:mb-0">
+
+                <li class="mr-2">
+                    <a href="#">
+                        <img class="max-w-16 max-h-12" src="https://res.cloudinary.com/astrava/image/upload/f_auto/v1589834066/alpinetoolbox/placeholder_k1nruc.png" alt="Affiliation company logo">
+                    </a>
+                </li>
+                <li class="mr-2">
+                    <a href="#">
+                        <img class="max-w-16 max-h-12" src="https://icones.pro/wp-content/uploads/2021/05/icone-html-rose.png" alt="Affiliation company logo">
+                    </a>
+                </li>
+                <li class="mr-2">
+                    <a href="#">
+                        <img class="max-w-16 max-h-12" src="https://cdn.worldvectorlogo.com/logos/tailwind-css-1.svg" alt="Affiliation company logo">
+                    </a>
+                </li>
+
+            </ul>
+            <div class="w-full md:w-auto text-sm text-center">
+
+                <a href="#" class="hover:text-lightGreen transition duration-300">Privacy policy</a>
+                <span class="mx-1">|</span>
+                <a href="#" class="hover:text-lightGreen transition duration-300">Contact us</a>
+                <span class="mx-1">|</span>
+                <a href="#" class="hover:text-lightGreen transition duration-300">Terms & Conditions</a>
+
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+<script src="./assets/js/plugins.js" defer></script>
+<script src="./dist/js/app.js"></script>
+</body>
+</html>

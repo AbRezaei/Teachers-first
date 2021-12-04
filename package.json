@@ -1,0 +1,93 @@
+{
+  "name": "naimuri",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/script.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "prod": " NODE_ENV=prod gulp prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbRezaei/Teachers-first.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbRezaei/Teachers-first/issues"
+  },
+  "homepage": "https://github.com/AbRezaei/Teachers-first#readme",
+  "dependencies": {
+    "alpinejs": "^3.5.2",
+    "tailwindcss-aspect-ratio": "^3.0.0",
+    "tailwindcss-typography": "^3.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "browser-sync": "^2.27.7",
+    "critical": "^4.0.1",
+    "cssnano": "^5.0.11",
+    "favicons": "^6.2.2",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-dest-clean": "^0.5.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-purgecss": "^4.0.3",
+    "gulp-rev": "^9.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.11",
+    "rev-del": "^2.0.0",
+    "sass": "^1.43.4",
+    "tailwindcss": "^2.2.19"
+  },
+  "paths": {
+    "dependencies": "node_modules/",
+    "public": "public/",
+    "templates": "templates/",
+    "dist": {
+      "base": "dist/",
+      "css": "dist/css/",
+      "js": "dist/js/",
+      "images": "dist/images/",
+      "favicon": "dist/images/favicon/"
+    },
+    "assets": {
+      "base": "public/assets/",
+      "scss": "public/assets/css/",
+      "js": "public/assets/js/",
+      "images": "public/assets/images/",
+      "fonts": "public/assets/css/fonts/"
+    }
+  },
+  "files": {
+    "tailwind": "./tailwind.config.js",
+    "dist": {
+      "css": "app.css",
+      "js": "app.js"
+    },
+    "assets": {
+      "scss": "app.scss",
+      "js": "js/script.js"
+    }
+  },
+  "purgeCss": {
+    "whitelist": [],
+    "whitelistPatterns": [
+      "lazy-load.*",
+      "flickity.*",
+      "aos.*"
+    ]
+  },
+  "cssDependencies": [],
+  "env": {
+    "local": ""
+  }
+}
