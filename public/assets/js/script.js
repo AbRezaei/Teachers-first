@@ -27,6 +27,18 @@ document.addEventListener('alpine:init', () => {
                 bodyOverflowVisible();
         }
     });
+
+    Alpine.data('checkbox', (el) => ({
+        el: el,
+        checked: false,
+
+        init() {
+            this.checked = this.el.querySelector('input[type=checkbox]').checked;
+        },
+        change(event) {
+            this.checked = event.target.checked;
+        }
+    }));
 });
 
 function bodyOverflowHidden() {
