@@ -77,6 +77,27 @@ a {
 }
 
 /* Styles */
+.social-medias {
+
+  .social-media-item {
+
+    a {
+
+      .social-media-icon {
+        fill: $blue;
+        transition: .3s ease-in-out;
+      }
+
+      &:hover {
+
+        .social-media-icon {
+          fill: $lightGreen;
+        }
+      }
+    }
+  }
+}
+
 nav, footer {
 
   .social-medias {
@@ -87,14 +108,6 @@ nav, footer {
 
         .social-media-icon {
           fill: #ffffff;
-          transition: .3s ease-in-out;
-        }
-
-        &:hover {
-
-          .social-media-icon {
-            fill: $lightGreen;
-          }
         }
       }
     }

@@ -186,7 +186,8 @@
 </nav>
 <!-- Mobile nav -->
 <template x-if="$store.page.mobileMode">
-    <nav class="sticky top-0 left-0 w-full py-4" style="background-image: linear-gradient(215deg, rgba(19,29,44,1) 81%, rgba(49,92,154,1) 100%); z-index: 1001">
+    <nav class="sticky top-0 left-0 w-full py-4"
+         style="background-image: linear-gradient(215deg, rgba(19,29,44,1) 81%, rgba(49,92,154,1) 100%); z-index: 1001">
         <div class="px-4 md:px-8 lg:px-12">
             <div class="flex flex-row justify-between items-center">
 
@@ -212,153 +213,253 @@
     </nav>
 </template>
 <!-- Header -->
-<header class="relative lg:h-screen text-white">
+<header class="lg:h-screen text-white">
+    <div class="flex flex-row flex-wrap lg:flex-nowrap justify-between lg:h-full">
 
-    <img src="./assets/images/assembly-header-bg.png" alt="Header image" class="w-full h-full object-cover">
-    <div class="absolute top-0 left-0 z-20 w-full h-full flex flex-row justify-center items-center">
-        <div class="w-full text-center">
+        <div class="w-full lg:w-1/2 py-6 lg:py-0 bg-blue flex flex-col justify-center order-2 lg:order-1">
             <div class="container">
 
-                <h1 class="text-3xl md:text-4xl lg:text-5xl leading-tight font-bold">THE ASSEMBLY</h1>
-                <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-pink">Welcome to the future of education employment</h2>
+                <h1 class="text-2xl md:text-3xl lg:text-4xl leading-none mb-8">Preparing for your future with a workplace pension - what you need to know</h1>
+                <p class="text-lg md:text-xl lg:text-2xl leading-tight mb-6">If your future is important to you, consider enrolling into your workplace pension.</p>
 
             </div>
         </div>
-    </div>
-    <div class="absolute top-0 left-0 z-10 w-full h-full" style="background: linear-gradient(180deg, rgba(19, 29, 44, 0.3) 0%, rgba(19, 29, 44, 1) 80%);"></div>
+        <div class="w-full lg:w-1/2 order-1 lg:order-2">
+            <img src="./assets/images/news.png" alt="Header banner" class="w-full h-full object-cover">
+        </div>
 
+    </div>
 </header>
 
-<section class="bg-navyBlue text-white py-10 lg:py-0">
-    <div class="px-4 md:px-8 lg:px-12">
+<div class="breadcrumb py-5" style="background-color: #26487A">
+    <div class="container">
+        <ul class="text-md text-white">
 
-        <ul class="mb-12">
-
-            <li class="flex flex-row flex-wrap lg:flex-nowrap items-stretch mb-12 lg:mb-0">
-
-                <div class="w-full lg:w-1/2 flex flex-col justify-center text-lg md:text-xl leading-none lg:px-8 lg:py-16 order-2 lg:order-1">
-                    <div>
-
-                        <h3 class="text-2xl md:text-3xl lg:text-4xl mb-2">You have a powerful voice.</h3>
-                        <h4 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-pink">It’s time for it to be heard</h4>
-                        <p class="leading-tight">Supply teachers can often feel under represented in the employment market. But collectively you account for over 20% of the teaching profession. We think it’s time for your voice to be heard.</p>
-
-                    </div>
-                </div>
-                <div class="w-full lg:w-1/2 mb-6 lg:mb-0 order-1 lg:order-2">
-                    <img class="w-full h-full object-cover rounded-md" src="./assets/images/cart-img1.png" alt="Service banner">
-                </div>
-
+            <li class="inline-block align-middle font-bold">
+                <a href="#" class="flex flex-row items-center">
+                    <span class="w-6 h-6 mr-2">
+                        <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path class="icon" fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0.832158 13.6854H2.73216V21.3954C2.73476 21.62 2.82514 21.8347 2.98399 21.9935C3.14284 22.1524 3.35753 22.2428 3.58216 22.2454H9.27215C9.36299 22.2534 9.45405 22.2324 9.53216 22.1854V15.0554H14.2422V22.2454H19.7922C20.0168 22.2428 20.2315 22.1524 20.3903 21.9935C20.5492 21.8347 20.6396 21.62 20.6422 21.3954V13.6854H23.0022C23.1663 13.6793 23.3251 13.6259 23.4594 13.5315C23.5938 13.4371 23.6979 13.3058 23.7593 13.1535C23.8206 13.0012 23.8365 12.8344 23.8051 12.6732C23.7737 12.5121 23.6963 12.3635 23.5822 12.2454L12.7322 1.24536C12.6558 1.16766 12.5648 1.10598 12.4644 1.06384C12.3639 1.02171 12.2561 1 12.1472 1C12.0382 1 11.9304 1.02171 11.83 1.06384C11.7295 1.10598 11.6385 1.16766 11.5622 1.24536L0.252156 12.2454C0.133433 12.3617 0.0518857 12.5106 0.0178272 12.6733C-0.0162313 12.836 -0.00126881 13.0051 0.0608265 13.1592C0.122922 13.3134 0.229355 13.4457 0.366658 13.5394C0.503961 13.633 0.665962 13.6838 0.832158 13.6854V13.6854Z"/>
+                        </svg>
+                    </span>
+                    <span>Home</span>
+                </a>
             </li>
-            <li class="flex flex-row-reverse flex-wrap lg:flex-nowrap items-stretch mb-12 lg:mb-0">
-
-                <div class="w-full lg:w-1/2 flex flex-col justify-center text-lg md:text-xl leading-none lg:px-8 lg:py-16 order-2 lg:order-1">
-                    <div>
-
-                        <h3 class="text-2xl md:text-3xl lg:text-4xl mb-2">We stand with the 20%.</h3>
-                        <h4 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-pink">Welcome to the Assembly</h4>
-                        <p class="leading-tight">The Assembly is a movement. A wave of change within education employment. Duis nec nunc lectus. Pellentesque quis lectus id leo convallis lacinia vel in nisi. Phasellus a est condimentum, pharetra quam volutpat, egestas urna. Fusce ac molestie nibh. Etiam at ante sit amet purus gravida imperdiet.</p>
-
-                    </div>
-                </div>
-                <div class="w-full lg:w-1/2 mb-6 lg:mb-0 order-1 lg:order-2">
-                    <img class="w-full h-full object-cover rounded-md" src="./assets/images/cart-img1.png" alt="Service banner">
-                </div>
-
+            <li class="inline-block align-middle text-blue mx-2">|</li>
+            <li class="inline-block align-middle font-bold">
+                <a href="#" class="flex flex-row items-center">
+                    <span>News & Events</span>
+                </a>
+            </li>
+            <li class="inline-block align-middle text-blue mx-2">|</li>
+            <li class="inline-block align-middle">
+                <a href="#" class="flex flex-row items-center">
+                    <span>Example article title goes here</span>
+                </a>
             </li>
 
         </ul>
-        <div class="flex flex-row flex-wrap lg:flex-nowrap items-center bg-pink px-4 md:px-8 lg:px-12 py-8">
+    </div>
+</div>
+<section class="">
+    <div class="flex flex-row flex-wrap lg:flex-nowrap justify-center">
 
-            <div class="w-full lg:w-2/5 mb-6 lg:mb-0">
-                <h3 class="text-xl md:text-2xl lg:text-3xl leading-tight">We put Teachers First.mrm <b>Benefits of the Assembly</b></h3>
+        <div class="w-full lg:w-3/4 py-16 md:py-20 lg:py-24 order-2 lg:order-1">
+            <div class="container">
+
+                <div class="content-block">
+
+                    <p>Pensions might seem complicated, but the basic idea is a simple one. It’s important to understand the benefits of contributing to a workplace pension, because your State Pension – while providing a foundation – may not be enough to live on in your future.</p>
+                    <h3>The importance of retirement savings</h3>
+                    <p>Millions of people aren’t saving nearly enough to give sufficient funds for living they hope for when they retire. Or, perhaps, it hasn’t been a thought for consideration and reluctantly, it has been left too late to start making pension contributions worthwhile.</p>
+                    <p>A State Pension, offering £179.60 a week (tax year 2021/22), is what people eligible will receive when they retire.  On average, you need at least 35 qualifying years to qualify for the full amount, which means if you are working on a temporary basis, it could take you a lot longer than the average worker to reach this.</p>
+                    <div class="flex flex-row flex-wrap">
+                        <img src="./assets/images/cart-img4.png" alt="Banner">
+                        <img src="./assets/images/cart-img4.png" alt="Banner">
+                    </div>
+                    <h4>What about Teacher’s Pension?</h4>
+                    <p>The Teacher’s Pension Scheme was introduced to England and Wales in 2007. The Teacher’s Pension Scheme is a government and employer-backed fund that make equal contributions to every contribution you make.</p>
+                    <p>Unfortunately, agency supply teachers are not eligible for Teacher’s Pension. The best option for a supply teacher to contribute towards their future is to enrol in a workplace pension.</p>
+                    <h4 style="color: #3768AF">In April 2020 nearly 8 out of 10 employees (78%) had a workplace pension, with an 80% participation from employees aged 22 to 29 years old.</h4>
+                    <h3>What are the benefits of a workplace pension?</h3>
+                    <p>When you are employed, your employer will enrol you into their workplace pension if you’re an eligible employee – this is called automatic enrolment and is made by law. You’ll be eligible if you’re:</p>
+                    <ul>
+                        <li>Aged 22 or over</li>
+                        <li>Under State Pension age</li>
+                        <li>Earning more than £192 per week (or £833 per month/£10000 per year)</li>
+                        <li>Working in the UK</li>
+                    </ul>
+                    <p>When you make contributions into your pensions, your employer has to make a contribution into the scheme as well. You’ll also get tax relief on the contributions you make into the scheme.</p>
+                    <h3>Let’s look at an example of your total contributions</h3>
+                    <p>If you’re in a workplace pension, each payday you’ll contribute:</p>
+                    <ul>
+                        <li>You put in £40</li>
+                        <li>Your employer puts in £30</li>
+                        <li>You get £10 tax relief</li>
+                    </ul>
+                    <p>A total of £80 goes into your pension.</p>
+                    <p>Your workplace pension is yours for life. If you work on a temporary basis, it is a good idea to look at where your contributions are and make continuous contributions into the same pension pot. The longer you save the more time there is for your money to grow, so the earlier you start contributing the better.</p>
+                    <p>If you work on a temporary basis, and for multiple agencies, it is worth considering an umbrella company for your employer. With an umbrella company, you can make continuous contributions to a pension, so when it comes to retirement, all of your savings are in one place.</p>
+                    <p>If you need more information on how an umbrella company works, click here, or to enquire call 03330 156 208.</p>
+
+                </div>
+
             </div>
-            <div class="w-full lg:w-3/5">
-                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-1 text-md md:text-lg lg:text-xl">
+        </div>
+        <div class="w-full lg:w-1/4 lg:px-8 py-12 md:py-16 lg:py-24 order-1 lg:order-2" style="background-color: #F2F2F2">
+            <div x-bind:class="{'container': $store.page.mobileMode}">
 
-                    <li class="flex flex-row">
-                        <img class="w-6 h-6 mt-1 mr-1" src="./assets/images/svg/white-checked.svg" alt="Check icon">
-                        <span>Possible ticklist item</span>
+                <img src="./assets/images/avatar.jpg" alt="Avatar" class="w-20 h-20 md:w-28 md:h-28 object-cover rounded-full mb-6">
+                <p class="text-blue font-bold">POSTED BY</p>
+                <h5 class="text-lg md:text-xl font-bold mb-2">John Smith</h5>
+                <p class="mb-6">John is an education and payroll specialist with over 30 years experience helping teachers succeed at all levels.</p>
+                <p class="text-blue font-bold mb-2">SHARE THIS POST</p>
+                <ul class="social-medias flex flex-row items-center">
+
+                    <li class="social-media-item mr-2">
+                        <a href="#" class="inline-block w-8 h-8">
+                                    <span class="inline-block w-full h-full">
+                                <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none">
+                                    <path class="social-media-icon"
+                                          d="M24.6057 39.6445V25.0715H29.1622L29.8275 19.3197H24.5653C24.4993 18.0096 24.4993 16.6968 24.5653 15.3867C24.6661 14.5026 25.4121 14.1164 26.2992 14.1164H29.6864V8.14101C27.1016 8.14339 24.5193 8.30627 21.9544 8.62879C19.1015 9.15723 17.7003 11.2709 17.5994 14.3501C17.549 15.9558 17.5994 17.5717 17.5994 19.3095H14.3433V24.9901H17.4986V40C9.63558 39.5732 0.492247 32.1649 0.00836663 20.8237C-0.140062 15.6405 1.69114 10.5978 5.124 6.73624C8.55685 2.87471 13.3293 0.489017 18.4563 0.0718729C21.1063 -0.155218 23.7745 0.157138 26.3024 0.99036C28.8302 1.82358 31.1661 3.16088 33.1711 4.92234C35.1761 6.68379 36.8093 8.8336 37.9736 11.2441C39.1379 13.6545 39.8096 16.2763 39.9487 18.9537C40.7149 29.7563 32.7711 38.2217 24.6057 39.6445Z"/>
+                                </svg>
+                            </span>
+                        </a>
                     </li>
-                    <li class="flex flex-row">
-                        <img class="w-6 h-6 mt-1 mr-1" src="./assets/images/svg/white-checked.svg" alt="Check icon">
-                        <span>Possible ticklist item</span>
+                    <li class="social-media-item mr-2">
+                        <a href="#" class="inline-block w-8 h-8">
+                                    <span class="inline-block w-full h-full">
+                                <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none">
+                                    <path class="social-media-icon"
+                                          d="M39.9995 20.0809C39.9835 24.0313 38.798 27.8884 36.5925 31.1659C34.387 34.4433 31.2603 36.9942 27.6068 38.4967C23.9533 39.9993 19.9366 40.3864 16.0635 39.6088C12.1903 38.8313 8.63415 36.924 5.84359 34.1278C3.05303 31.3316 1.15306 27.7716 0.383334 23.8969C-0.386395 20.0221 0.00859876 16.0064 1.5185 12.3559C3.0284 8.70537 5.58557 5.58386 8.86744 3.38494C12.1493 1.18602 16.0089 0.00826718 19.9593 0.000258261C22.5982 -0.0131699 25.2135 0.497174 27.6536 1.50207C30.0937 2.50696 32.31 3.98631 34.1741 5.85419C36.0382 7.72207 37.513 9.94136 38.513 12.3835C39.513 14.8256 40.0182 17.442 39.9995 20.0809ZM21.2112 29.5507C21.2112 26.9358 21.2112 24.3918 21.2112 21.8476C21.1988 21.3146 21.253 20.7821 21.3727 20.2625C21.5135 19.696 21.8412 19.1936 22.3029 18.8364C22.7645 18.4791 23.3331 18.288 23.9168 18.2939C24.5021 18.276 25.0741 18.4706 25.5269 18.8418C25.9798 19.213 26.2829 19.7356 26.3802 20.313C26.5217 21.082 26.5826 21.8637 26.562 22.6452C26.562 24.937 26.562 27.2288 26.562 29.5408H31.7815C31.7815 25.977 32.0238 22.4735 31.7108 19.0005C31.4382 15.9718 28.9547 14.2252 25.8855 14.2454C25.0197 14.2418 24.1627 14.4197 23.3698 14.7675C22.5769 15.1152 21.8656 15.6252 21.2818 16.2646L21.1304 14.4877H15.9613V29.5307L21.2112 29.5507ZM8.28852 14.4068V29.4903H12.9023V14.4271L8.28852 14.4068ZM10.449 12.4988C10.8179 12.5291 11.189 12.4845 11.5402 12.3677C11.8914 12.2509 12.2154 12.0642 12.4926 11.819C12.7698 11.5739 12.9946 11.2751 13.1535 10.9408C13.3124 10.6066 13.4021 10.2436 13.4172 9.87381C13.4247 9.51265 13.3575 9.15387 13.22 8.81985C13.0824 8.48584 12.8774 8.1839 12.6177 7.93277C12.358 7.68164 12.0493 7.48678 11.7109 7.36044C11.3725 7.2341 11.0116 7.17897 10.6509 7.1985C10.2827 7.14908 9.90831 7.17684 9.55145 7.28009C9.19459 7.38333 8.86315 7.5598 8.57823 7.79819C8.2933 8.03657 8.06115 8.33178 7.89655 8.66482C7.73195 8.99786 7.63851 9.36144 7.62219 9.73258C7.61219 10.1047 7.67878 10.4748 7.81783 10.8201C7.95688 11.1653 8.16542 11.4784 8.43051 11.7397C8.69559 12.001 9.01156 12.205 9.3588 12.3391C9.70603 12.4732 10.0771 12.5344 10.449 12.519V12.4988Z"/>
+                                </svg>
+                            </span>
+                        </a>
                     </li>
-                    <li class="flex flex-row">
-                        <img class="w-6 h-6 mt-1 mr-1" src="./assets/images/svg/white-checked.svg" alt="Check icon">
-                        <span>Possible ticklist item</span>
-                    </li>
-                    <li class="flex flex-row">
-                        <img class="w-6 h-6 mt-1 mr-1" src="./assets/images/svg/white-checked.svg" alt="Check icon">
-                        <span>Possible ticklist item</span>
+                    <li class="social-media-item mr-2">
+                        <a href="#" class="inline-block w-8 h-8">
+                                    <span class="inline-block w-full h-full">
+                                <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none">
+                                    <path class="social-media-icon"
+                                          d="M39.9999 19.9503C40.0098 23.9012 38.8492 27.7664 36.6647 31.0584C34.4802 34.3504 31.3696 36.9215 27.7253 38.4476C24.0811 39.9737 20.0665 40.3864 16.1881 39.6334C12.3096 38.8804 8.74109 36.9954 5.9327 34.2165C3.1243 31.4376 1.20189 27.8893 0.40797 24.019C-0.385946 20.1487 -0.0157964 16.1299 1.47175 12.4698C2.95929 8.80965 5.49758 5.67197 8.76634 3.45283C12.0351 1.23369 15.8879 0.0325252 19.8386 0.000651055C22.4744 -0.0206138 25.0884 0.479231 27.5302 1.47165C29.9721 2.46406 32.1937 3.92954 34.0673 5.78349C35.9409 7.63744 37.4296 9.84337 38.4477 12.2746C39.4659 14.7059 39.9934 17.3145 39.9999 19.9503ZM11.139 32.6217L11.5826 32.682C12.3487 32.309 13.135 31.9765 13.8709 31.5531C14.5446 31.089 15.3069 30.7688 16.11 30.6127C16.9131 30.4566 17.7397 30.4678 18.5382 30.6457C19.5939 30.8471 20.6781 30.8471 21.7338 30.6457C26.6834 29.8796 30.3124 27.2991 32.0463 22.5209C32.8155 20.5434 33.0011 18.3865 32.5812 16.3066C32.1613 14.2268 31.1535 12.3111 29.6774 10.7869C28.4413 9.43962 26.9425 8.35978 25.2733 7.61356C23.6041 6.86733 21.7998 6.47065 19.9716 6.44798C18.1433 6.42532 16.3298 6.77702 14.6426 7.48164C12.9554 8.18626 11.4303 9.22875 10.1612 10.545C6.40115 14.4462 5.61487 20.5046 8.79027 24.8393C10.5443 27.2082 12.1169 29.406 11.139 32.6217Z"/>
+                                    <path class="social-media-icon"
+                                          d="M21.1791 22.6116L17.8424 19.0129L12.7013 22.0371L12.54 21.8656L18.8807 15.0309C19.7174 16.039 20.4735 17.0472 21.1993 17.9443C21.7033 18.5996 22.2074 18.5592 22.8828 18.156C24.2516 17.3086 25.6959 16.5897 27.1973 16.0087L21.1791 22.6116Z"/>
+                                </svg>
+                            </span>
+                        </a>
                     </li>
 
                 </ul>
-            </div>
 
+            </div>
         </div>
 
     </div>
 </section>
-<section class="py-16 md:py-20 lg:py-24 bg-navyBlue text-white">
-    <div class="container">
+<section class="relative py-12 lg:py-16 bg-blue">
 
-        <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center leading-none mb-8 md:mb-12">It’s time for change. Take your first step.</h3>
-        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="relative z-20 container">
 
-            <li>
+        <div class="flex flex-wrap justify-between items-center">
 
-                <div class="relative w-full h-64 md:h-72 mb-8">
+            <h5 class="text-xl md:text-2xl lg:text-3xl text-white leading-tight mr-4 mb-6 md:mb-8">Explore our related events and articles</h5>
+            <a href="#" class="inline-block bg-navyBlue text-sm text-white font-bold py-3 px-4 rounded-md hover:text-white hover:opacity-80 duration-300 mb-6 md:mb-8" style="border: 1px solid #2C5288">BOOK YOUR PLACE</a>
 
-                    <img src="./assets/images/step1.png" alt="Step image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
-                    <div class="absolute bottom-0 left-0 w-20 md:w-24 h-20 md:h-24 flex flex-row justify-center items-center rounded-full bg-pink">
-                        <img src="./assets/images/svg/step1.svg" alt="Step icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
-                    </div>
+        </div>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 
+            <li class="flex flex-col justify-start">
+
+                <div class="h-36">
+                    <img src="assets/images/news.png" alt="Document icon" class="w-full h-full object-cover">
                 </div>
-                <div>
+                <div class="flex-grow flex flex-col justify-between items-start text-center p-4" style="background-color: #F2F2F2">
 
-                    <h4 class="text-xl md:text-2xl lg:text-3xl font-bold leading-none mb-3">Join the Assembly</h4>
-                    <p class="text-md lg:text-lg leading-tight mb-4">Duis nec nunc lectus. Pellentesque quis lectus id leo convallis lacinia vel in nisi. Phasellus a est condimentum, pharetra quam volutpat.</p>
-                    <a href="#" class="inline-block bg-pink text-base text-white font-bold py-4 px-6 rounded-md hover:text-white hover:opacity-80 transition duration-300">BECOME A MEMBER</a>
+                    <div class="mb-6">
+
+                        <p class="text-blue font-bold mb-2">NEWS</p>
+                        <p class="text-md md:text-lg lg:text-xl leading-none">Preparing for your future with a workplace pension - what you need to know</p>
+
+                    </div>
+                    <a href="#"
+                       class="inline-block bg-blue text-sm text-white font-bold py-3 px-6 rounded-md hover:text-white hover:opacity-80 transition duration-300 mx-auto"
+                       style="border: 1px solid #26487A">READ ARTICLE</a>
 
                 </div>
 
             </li>
-            <li>
+            <li class="flex flex-col justify-start">
 
-                <div class="relative w-full h-64 md:h-72 mb-8">
+                <div class="flex flex-row h-36">
 
-                    <img src="./assets/images/step2.png" alt="Step image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
-                    <div class="absolute bottom-0 left-0 w-20 md:w-24 h-20 md:h-24 flex flex-row justify-center items-center rounded-full bg-pink">
-                        <img src="./assets/images/svg/step2.svg" alt="Step icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
+                    <div class="w-1/2 h-full">
+                        <img src="assets/images/news.png" alt="Document icon" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-1/2 h-full flex flex-row justify-center items-center" style="background-color: #26487A">
+                        <span class="text-xl md:text-2xl text-white leading-none">13TH<br>DEC</span>
                     </div>
 
                 </div>
-                <div>
+                <div class="flex-grow flex flex-col justify-between items-start text-center p-4" style="background-color: #F2F2F2">
 
-                    <h4 class="text-xl md:text-2xl lg:text-3xl font-bold leading-none mb-3">Get your voice heard</h4>
-                    <p class="text-md lg:text-lg leading-tight mb-4">Duis nec nunc lectus. Pellentesque quis lectus id leo convallis lacinia vel in nisi. Phasellus a est condimentum, pharetra quam volutpat.</p>
-                    <a href="#" class="inline-block bg-pink text-base text-white font-bold py-4 px-6 rounded-md hover:text-white hover:opacity-80 transition duration-300">TAKE OUR ETHICS SURVEY</a>
+                    <div class="mb-6">
+
+                        <p class="text-blue font-bold mb-2">EVENT</p>
+                        <p class="text-md md:text-lg lg:text-xl leading-none">Dealing with Zoom - navigating the school workplace of 2021</p>
+
+                    </div>
+                    <a href="#"
+                       class="inline-block bg-blue text-sm text-white font-bold py-3 px-6 rounded-md hover:text-white hover:opacity-80 transition duration-300 mx-auto"
+                       style="border: 1px solid #26487A">VIEW EVENT</a>
 
                 </div>
 
             </li>
-            <li>
+            <li class="flex flex-col justify-start">
 
-                <div class="relative w-full h-64 md:h-72 mb-8">
+                <div class="h-36">
+                    <img src="assets/images/news.png" alt="Document icon" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-grow flex flex-col justify-between items-start text-center p-4" style="background-color: #F2F2F2">
 
-                    <img src="./assets/images/step3.png" alt="Step image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
-                    <div class="absolute bottom-0 left-0 w-20 md:w-24 h-20 md:h-24 flex flex-row justify-center items-center rounded-full bg-pink">
-                        <img src="./assets/images/svg/step3.svg" alt="Step icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
+                    <div class="mb-6">
+
+                        <p class="text-blue font-bold mb-2">NEWS</p>
+                        <p class="text-md md:text-lg lg:text-xl leading-none">Preparing for your future with a workplace pension - what you need to know</p>
+
+                    </div>
+                    <a href="#"
+                       class="inline-block bg-blue text-sm text-white font-bold py-3 px-6 rounded-md hover:text-white hover:opacity-80 transition duration-300 mx-auto"
+                       style="border: 1px solid #26487A">READ ARTICLE</a>
+
+                </div>
+
+            </li>
+            <li class="flex flex-col justify-start">
+
+                <div class="flex flex-row h-36">
+
+                    <div class="w-1/2 h-full">
+                        <img src="assets/images/news.png" alt="Document icon" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-1/2 h-full flex flex-row justify-center items-center" style="background-color: #26487A">
+                        <span class="text-xl md:text-2xl text-white leading-none">13TH<br>DEC</span>
                     </div>
 
                 </div>
-                <div>
+                <div class="flex-grow flex flex-col justify-between items-start text-center p-4" style="background-color: #F2F2F2">
 
-                    <h4 class="text-xl md:text-2xl lg:text-3xl font-bold leading-none mb-3">Shape the future</h4>
-                    <p class="text-md lg:text-lg leading-tight mb-4">Duis nec nunc lectus. Pellentesque quis lectus id leo convallis lacinia vel in nisi. Phasellus a est condimentum, pharetra quam volutpat.</p>
-                    <a href="#" class="inline-block bg-pink text-base text-white font-bold py-4 px-6 rounded-md hover:text-white hover:opacity-80 transition duration-300">JOIN THE FORUM</a>
+                    <div class="mb-6">
+
+                        <p class="text-blue font-bold mb-2">EVENT</p>
+                        <p class="text-md md:text-lg lg:text-xl leading-none">Dealing with Zoom - navigating the school workplace of 2021</p>
+
+                    </div>
+                    <a href="#"
+                       class="inline-block bg-blue text-sm text-white font-bold py-3 px-6 rounded-md hover:text-white hover:opacity-80 transition duration-300 mx-auto"
+                       style="border: 1px solid #26487A">VIEW EVENT</a>
 
                 </div>
 
@@ -367,6 +468,8 @@
         </ul>
 
     </div>
+    <div class="absolute top-0 left-0 z-10 w-full h-full" style="background: linear-gradient(to top, rgba(19, 29, 44, 0.6), rgba(19, 29, 44, 0.1));"></div>
+
 </section>
 <section class="py-8 md:py-10 lg:py-12">
     <div class="container">
@@ -462,7 +565,8 @@
     </div>
 </section>
 
-<footer class="text-white" style="background-image: linear-gradient(215deg, rgba(19,29,44,1) 70%, rgba(49,92,154,1) 100%);">
+<footer class="text-white"
+        style="background-image: linear-gradient(215deg, rgba(19,29,44,1) 70%, rgba(49,92,154,1) 100%);">
     <div class="container">
 
         <div class="text-lg flex flex-row flex-wrap lg:flex-nowrap justify-between py-10 lg:py-12">
