@@ -186,7 +186,8 @@
 </nav>
 <!-- Mobile nav -->
 <template x-if="$store.page.mobileMode">
-    <nav class="sticky top-0 left-0 w-full py-4" style="background-image: linear-gradient(215deg, rgba(19,29,44,1) 81%, rgba(49,92,154,1) 100%); z-index: 1001">
+    <nav class="sticky top-0 left-0 w-full py-4"
+         style="background-image: linear-gradient(215deg, rgba(19,29,44,1) 81%, rgba(49,92,154,1) 100%); z-index: 1001">
         <div class="px-4 md:px-8 lg:px-12">
             <div class="flex flex-row justify-between items-center">
 
@@ -215,204 +216,216 @@
 <header class="lg:h-screen text-white">
     <div class="flex flex-row flex-wrap lg:flex-nowrap justify-between lg:h-full">
 
-        <div class="w-full lg:w-1/2 py-6 lg:py-0 bg-pink flex flex-col justify-center order-2 lg:order-1">
+        <div class="w-full lg:w-1/2 py-6 lg:py-0 bg-blue flex flex-col justify-center order-2 lg:order-1">
             <div class="container">
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">Umbrella</h1>
-                <h2 class="text-3xl md:text-4xl lg:text-5xl leading-none mb-8">Discover the benefits of a single employer</h2>
-                <p class="text-lg md:text-xl lg:text-2xl leading-tight">Educating you about your pay</p>
+
+                <h1 class="text-2xl md:text-3xl lg:text-4xl leading-none mb-8">Dealing with Zoom - Navigating the school workplace of 2021</h1>
+                <p class="text-lg md:text-xl lg:text-2xl leading-tight mb-6">Get all the answers you need to master virtual learning in our upcoming webinar</p>
+                <a href="#" class="inline-block bg-navyBlue text-base text-white font-bold py-4 px-6 rounded-md hover:text-white hover:opacity-80 duration-300" style="border: 1px solid #2C5288">BOOK YOUR PLACE</a>
+
             </div>
         </div>
-        <div class="w-full lg:w-1/2 order-1 lg:order-2">
-            <img src="./assets/images/cart-img1.png" alt="Header banner" class="w-full h-full object-cover">
+        <div class="relative w-full lg:w-1/2 order-1 lg:order-2">
+
+            <img src="./assets/images/event.png" alt="Header banner" class="w-full h-full object-cover">
+            <div class="absolute bottom-0 left-0 w-36 h-36 flex flex-row justify-center items-center" style="background-color: #26487A">
+                <span class="text-xl md:text-2xl text-white leading-none">13TH<br>DEC</span>
+            </div>
+
         </div>
 
     </div>
 </header>
 
-<div class="breadcrumb py-5" style="background-color: #96194C">
+<div class="breadcrumb py-5" style="background-color: #26487A">
     <div class="container">
         <ul class="text-md text-white">
 
             <li class="inline-block align-middle font-bold">
                 <a href="#" class="flex flex-row items-center">
                     <span class="w-6 h-6 mr-2">
-                        <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="icon" fill-rule="evenodd" clip-rule="evenodd" d="M0.832158 13.6854H2.73216V21.3954C2.73476 21.62 2.82514 21.8347 2.98399 21.9935C3.14284 22.1524 3.35753 22.2428 3.58216 22.2454H9.27215C9.36299 22.2534 9.45405 22.2324 9.53216 22.1854V15.0554H14.2422V22.2454H19.7922C20.0168 22.2428 20.2315 22.1524 20.3903 21.9935C20.5492 21.8347 20.6396 21.62 20.6422 21.3954V13.6854H23.0022C23.1663 13.6793 23.3251 13.6259 23.4594 13.5315C23.5938 13.4371 23.6979 13.3058 23.7593 13.1535C23.8206 13.0012 23.8365 12.8344 23.8051 12.6732C23.7737 12.5121 23.6963 12.3635 23.5822 12.2454L12.7322 1.24536C12.6558 1.16766 12.5648 1.10598 12.4644 1.06384C12.3639 1.02171 12.2561 1 12.1472 1C12.0382 1 11.9304 1.02171 11.83 1.06384C11.7295 1.10598 11.6385 1.16766 11.5622 1.24536L0.252156 12.2454C0.133433 12.3617 0.0518857 12.5106 0.0178272 12.6733C-0.0162313 12.836 -0.00126881 13.0051 0.0608265 13.1592C0.122922 13.3134 0.229355 13.4457 0.366658 13.5394C0.503961 13.633 0.665962 13.6838 0.832158 13.6854V13.6854Z"/>
+                        <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path class="icon" fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0.832158 13.6854H2.73216V21.3954C2.73476 21.62 2.82514 21.8347 2.98399 21.9935C3.14284 22.1524 3.35753 22.2428 3.58216 22.2454H9.27215C9.36299 22.2534 9.45405 22.2324 9.53216 22.1854V15.0554H14.2422V22.2454H19.7922C20.0168 22.2428 20.2315 22.1524 20.3903 21.9935C20.5492 21.8347 20.6396 21.62 20.6422 21.3954V13.6854H23.0022C23.1663 13.6793 23.3251 13.6259 23.4594 13.5315C23.5938 13.4371 23.6979 13.3058 23.7593 13.1535C23.8206 13.0012 23.8365 12.8344 23.8051 12.6732C23.7737 12.5121 23.6963 12.3635 23.5822 12.2454L12.7322 1.24536C12.6558 1.16766 12.5648 1.10598 12.4644 1.06384C12.3639 1.02171 12.2561 1 12.1472 1C12.0382 1 11.9304 1.02171 11.83 1.06384C11.7295 1.10598 11.6385 1.16766 11.5622 1.24536L0.252156 12.2454C0.133433 12.3617 0.0518857 12.5106 0.0178272 12.6733C-0.0162313 12.836 -0.00126881 13.0051 0.0608265 13.1592C0.122922 13.3134 0.229355 13.4457 0.366658 13.5394C0.503961 13.633 0.665962 13.6838 0.832158 13.6854V13.6854Z"/>
                         </svg>
                     </span>
                     <span>Home</span>
                 </a>
             </li>
-            <li class="inline-block align-middle text-pink mx-2">|</li>
+            <li class="inline-block align-middle text-lightGreen mx-2">|</li>
             <li class="inline-block align-middle font-bold">
                 <a href="#" class="flex flex-row items-center">
-                    <span>Our Services</span>
+                    <span>News & Events</span>
                 </a>
             </li>
-            <li class="inline-block align-middle text-pink mx-2">|</li>
+            <li class="inline-block align-middle text-lightGreen mx-2">|</li>
             <li class="inline-block align-middle">
                 <a href="#" class="flex flex-row items-center">
-                    <span>Umbrella</span>
+                    <span>Example event title goes here</span>
                 </a>
             </li>
 
         </ul>
     </div>
 </div>
-<section class="bg-cover bg-center bg-no-repeat py-20 md:py-24 lg:py-32" style="background-image: url('./assets/images/bg1.png')">
-    <div class="container">
-        <div class="flex justify-end">
-            <div class="lg:w-2/3">
+<section class="">
+    <div class="flex flex-row flex-wrap lg:flex-nowrap justify-center">
 
-                <h3 class="text-2xl md:text-3xl lg:text-4xl leading-none font-bold mb-4 md:mb-6">Your pay under control</h3>
-                <p class="text-md md:text-lg lg:text-xl leading-tight mb-4 md:mb-6">If you have worked for multiple agencies, you will have noticed that the more agencies you work for, the more payroll providers you will have used. Using Teachers First as your singular employer gives you the flexibility of working through multiple agencies whilst maintaining the benefits of one tax code. We offer both Umbrella and PAYE payroll solutions.</p>
-                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-md md:text-lg">
+        <div class="w-full lg:w-3/4 py-16 md:py-20 lg:py-24 order-2 lg:order-1">
+            <div class="container">
 
-                    <li class="flex flex-row">
-                        <img class="w-5 h-5 mt-1 mr-1" src="./assets/images/svg/checked.svg" alt="Check icon">
-                        <span>Your money on time</span>
-                    </li>
-                    <li class="flex flex-row">
-                        <img class="w-5 h-5 mt-1 mr-1" src="./assets/images/svg/checked.svg" alt="Check icon">
-                        <span>Guaranteed pension contributions</span>
-                    </li>
-                    <li class="flex flex-row">
-                        <img class="w-5 h-5 mt-1 mr-1" src="./assets/images/svg/checked.svg" alt="Check icon">
-                        <span>Free tax return up to £180</span>
-                    </li>
-                    <li class="flex flex-row">
-                        <img class="w-5 h-5 mt-1 mr-1" src="./assets/images/svg/checked.svg" alt="Check icon">
-                        <span>Short-term cash advances</span>
-                    </li>
-                    <li class="flex flex-row">
-                        <img class="w-5 h-5 mt-1 mr-1" src="./assets/images/svg/checked.svg" alt="Check icon">
-                        <span>Nationwide payroll providers</span>
-                    </li>
-                    <li class="flex flex-row">
-                        <img class="w-5 h-5 mt-1 mr-1" src="./assets/images/svg/checked.svg" alt="Check icon">
-                        <span>Work with Education Professionals</span>
-                    </li>
-                    <li class="flex flex-row">
-                        <img class="w-5 h-5 mt-1 mr-1" src="./assets/images/svg/checked.svg" alt="Check icon">
-                        <span>We work with any Education agency</span>
-                    </li>
+                <div class="content-block mb-8">
 
-                </ul>
+                    <p>Donec nec rutrum urna, et dapibus urna. Nam a consectetur ipsum, vel laoreet erat. Sed sed ullamcorper libero. Duis non dapibus massa. In lobortis vel magna vel pulvinar. Cras finibus sem lobortis lacus congue eleifend. Curabitur vulputate varius odio, et vestibulum tellus volutpat non. Fusce sapien sem, placerat ac diam eu, ornare mattis elit. Pellentesque accumsan nibh lorem, luctus pharetra nisl ornare vitae.</p>
+                    <p>Duis nec nunc lectus. Pellentesque quis lectus id leo convallis lacinia vel in nisi. Phasellus a est condimentum, pharetra quam volutpat, egestas urna. Fusce ac molestie nibh. Etiam at ante sit amet purus gravida imperdiet. Nulla facilisi. Fusce eu tortor nunc. Nulla neque lorem, auctor at sollicitudin ultrices, scelerisque et diam. Mauris facilisis mauris massa. Nam tempor dolor eu posuere ornare. Suspendisse ultrices eget sapien quis vulputate. Cras gravida tempus tristique.</p>
+                    <p>Sed pharetra suscipit ex. Etiam turpis lectus, bibendum eget ornare eget, fermentum non purus. Vivamus vel congue magna, eu dapibus elit. Maecenas posuere volutpat condimentum. Nullam auctor porttitor vulputate. Donec rhoncus ligula ac vestibulum maximus. Donec volutpat lacinia tellus, eu iaculis sem rhoncus quis. Sed sed libero ligula. Mauris dictum, diam eget consequat tristique, erat erat luctus purus, vitae vulputate arcu ligula vel arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem turpis, venenatis sit amet scelerisque eget, iaculis non justo. Nunc posuere nunc sed imperdiet euismod. Donec et justo et diam condimentum blandit eu id massa. Donec efficitur dapibus pulvinar.</p>
+                    <p>Maecenas a magna laoreet, vehicula lorem ac, lobortis risus. Sed at commodo erat. Donec auctor ultrices porttitor. Phasellus gravida mi quis purus sodales, eu pretium dolor venenatis. Ut ullamcorper turpis eu consectetur pellentesque. Cras vel libero libero. Integer vulputate lobortis neque, feugiat rhoncus ex ultrices quis. Nam risus nulla, placerat nec fringilla malesuada, dignissim vulputate mauris. Nam tristique risus eu erat cursus, ac porta tortor ullamcorper.</p>
+                    <div class="flex flex-row flex-wrap">
+                        <img src="./assets/images/cart-img4.png" alt="Banner">
+                        <img src="./assets/images/cart-img4.png" alt="Banner">
+                    </div>
+                    <h3>This is a 30px subheading</h3>
+                    <p>Vivamus porta ipsum sed congue volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis interdum tincidunt pellentesque. Etiam efficitur sed metus eget ultricies. Phasellus suscipit ullamcorper molestie. Aliquam gravida metus risus, ac sollicitudin turpis aliquet id.</p>
+                    <p>Nunc arcu nunc, lacinia in viverra et, finibus ut risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla aliquam nisl vitae scelerisque suscipit. Praesent sit amet felis posuere, faucibus massa eget, ornare risus. Etiam vel lectus laoreet felis vestibulum ornare id eu nisl. Aliquam vitae nisl ornare tellus ullamcorper convallis eget in ligula. Donec lacinia ligula est, ut pretium felis ullamcorper at. Morbi ut interdum massa, a blandit velit. Morbi euismod bibendum leo, et pulvinar orci cursus vel. Etiam facilisis ligula nec libero dictum elementum. Aliquam pharetra elit metus, a venenatis odio facilisis eu. Vestibulum molestie neque eget arcu interdum, quis pellentesque libero rhoncus. In hac habitasse platea dictumst.</p>
+
+                </div>
+                <div class="flex flex-row flex-wrap sm:flex-nowrap items-stretch">
+
+                    <div class="w-full sm:w-1/4 flex flex-row justify-center items-center py-8 sm:py-0" style="background-color: #26487A">
+                        <span class="text-xl md:text-2xl text-white leading-none">13TH<br>DEC</span>
+                    </div>
+                    <div class="w-full sm:w-3/4 bg-blue text-white px-4 lg:px-8 py-8">
+
+                        <h4 class="text-xl lg:text-2xl leading-none mb-6">Don’t miss out -<br>Book your place now at Eventbrite</h4>
+                        <a href="#" class="inline-block bg-navyBlue text-base text-white font-bold py-4 px-6 rounded-md hover:text-white hover:opacity-80 duration-300" style="border: 1px solid #2C5288">BOOK YOUR PLACE</a>
+
+                    </div>
+
+                </div>
 
             </div>
         </div>
+        <div class="w-full lg:w-1/4 lg:px-8 py-12 md:py-16 lg:py-24 order-1 lg:order-2" style="background-color: #F2F2F2">
+            <div x-bind:class="{'container': $store.page.mobileMode}">
+
+                <img src="./assets/images/avatar.jpg" alt="Avatar" class="w-20 h-20 md:w-28 md:h-28 object-cover rounded-full mb-6">
+                <p class="text-blue font-bold">HOSTED BY</p>
+                <h5 class="text-lg md:text-xl font-bold mb-2">Annette Otherington</h5>
+                <p class="mb-6">Annette is an education specialist with over 30 years experience teaching all levels. For the past decade Annette has worked virtually, teaching exclusively online. In these unprecidented times, who better to share the secrets of Zoom learning.</p>
+                <p class="text-blue font-bold">WHEN</p>
+                <p class="text-md md:text-lg font-bold mb-6">Monday 13th December 2021</p>
+                <p class="text-blue font-bold">WHERE</p>
+                <p class="text-md md:text-lg font-bold mb-8">Virtual Webinar</p>
+                <a href="#" class="inline-block bg-navyBlue text-base text-white font-bold py-4 px-6 rounded-md hover:text-white hover:opacity-80 duration-300" style="border: 1px solid #2C5288">BOOK YOUR PLACE</a>
+
+            </div>
+        </div>
+
     </div>
 </section>
-<section class="mb-16 lg:mb-24">
-    <div class="container">
+<section class="relative py-12 lg:py-16 bg-blue">
 
-        <h3 class="text-2xl md:text-3xl lg:text-4xl text-center leading-none font-bold mb-8 md:mb-12">The benefits of a single employer</h3>
-        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="relative z-20 container">
 
-            <li>
+        <div class="flex flex-wrap justify-between items-center">
 
-                <div class="relative w-full h-64 md:h-72 mb-8">
+            <h5 class="text-xl md:text-2xl lg:text-3xl text-white leading-tight mr-4 mb-6 md:mb-8">Explore our related events and articles</h5>
+            <a href="#" class="inline-block bg-navyBlue text-sm text-white font-bold py-3 px-4 rounded-md hover:text-white hover:opacity-80 duration-300 mb-6 md:mb-8" style="border: 1px solid #2C5288">BOOK YOUR PLACE</a>
 
-                    <img src="./assets/images/benefit1.png" alt="Benefit image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
-                    <div class="absolute bottom-0 left-0 w-20 md:w-24 h-20 md:h-24 flex flex-row justify-center items-center rounded-full bg-pink">
-                        <img src="./assets/images/svg/benefit1.svg" alt="Benefit icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
-                    </div>
+        </div>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 
+            <li class="flex flex-col justify-start">
+
+                <div class="h-36">
+                    <img src="assets/images/news.png" alt="Document icon" class="w-full h-full object-cover">
                 </div>
-                <div>
+                <div class="flex-grow flex flex-col justify-between items-start text-center p-4" style="background-color: #F2F2F2">
 
-                    <h4 class="text-xl md:text-2xl lg:text-3xl leading-none mb-3">Credit Application</h4>
-                    <p class="text-md lg:text-lg leading-tight">Applying for bank loans or mortgages is easy with our continuous employment.</p>
+                    <div class="mb-6">
+
+                        <p class="text-blue mb-2">NEWS</p>
+                        <p class="text-md md:text-lg lg:text-xl leading-none">Preparing for your future with a workplace pension - what you need to know</p>
+
+                    </div>
+                    <a href="#"
+                       class="inline-block bg-blue text-sm text-white font-bold py-3 px-6 rounded-md hover:text-white hover:opacity-80 transition duration-300 mx-auto"
+                       style="border: 1px solid #26487A">READ ARTICLE</a>
 
                 </div>
 
             </li>
-            <li>
+            <li class="flex flex-col justify-start">
 
-                <div class="relative w-full h-64 md:h-72 mb-8">
+                <div class="flex flex-row h-36">
 
-                    <img src="./assets/images/benefit2.png" alt="Benefit image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
-                    <div class="absolute bottom-0 left-0 w-20 md:w-24 h-20 md:h-24 flex flex-row justify-center items-center rounded-full bg-pink">
-                        <img src="./assets/images/svg/benefit2.svg" alt="Benefit icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
+                    <div class="w-1/2 h-full">
+                        <img src="assets/images/news.png" alt="Document icon" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-1/2 h-full flex flex-row justify-center items-center" style="background-color: #26487A">
+                        <span class="text-xl md:text-2xl text-white leading-none">13TH<br>DEC</span>
                     </div>
 
                 </div>
-                <div>
+                <div class="flex-grow flex flex-col justify-between items-start text-center p-4" style="background-color: #F2F2F2">
 
-                    <h4 class="text-xl md:text-2xl lg:text-3xl leading-none mb-3">Employee Care</h4>
-                    <p class="text-md lg:text-lg leading-tight">We demonstrate a high level of care to our candidates through our industry knowledge and understanding.</p>
+                    <div class="mb-6">
+
+                        <p class="text-blue mb-2">EVENT</p>
+                        <p class="text-md md:text-lg lg:text-xl leading-none">Dealing with Zoom - navigating the school workplace of 2021</p>
+
+                    </div>
+                    <a href="#"
+                       class="inline-block bg-blue text-sm text-white font-bold py-3 px-6 rounded-md hover:text-white hover:opacity-80 transition duration-300 mx-auto"
+                       style="border: 1px solid #26487A">VIEW EVENT</a>
 
                 </div>
 
             </li>
-            <li>
+            <li class="flex flex-col justify-start">
 
-                <div class="relative w-full h-64 md:h-72 mb-8">
-
-                    <img src="./assets/images/benefit3.png" alt="Benefit image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
-                    <div class="absolute bottom-0 left-0 w-20 md:w-24 h-20 md:h-24 flex flex-row justify-center items-center rounded-full bg-pink">
-                        <img src="./assets/images/svg/benefit3.svg" alt="Benefit icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
-                    </div>
-
+                <div class="h-36">
+                    <img src="assets/images/news.png" alt="Document icon" class="w-full h-full object-cover">
                 </div>
-                <div>
+                <div class="flex-grow flex flex-col justify-between items-start text-center p-4" style="background-color: #F2F2F2">
 
-                    <h4 class="text-xl md:text-2xl lg:text-3xl leading-none mb-3">One Pension Pot</h4>
-                    <p class="text-md lg:text-lg leading-tight">Having Teachers First as your employer means all of your income is paid into the same pension fund.</p>
+                    <div class="mb-6">
+
+                        <p class="text-blue mb-2">NEWS</p>
+                        <p class="text-md md:text-lg lg:text-xl leading-none">Preparing for your future with a workplace pension - what you need to know</p>
+
+                    </div>
+                    <a href="#"
+                       class="inline-block bg-blue text-sm text-white font-bold py-3 px-6 rounded-md hover:text-white hover:opacity-80 transition duration-300 mx-auto"
+                       style="border: 1px solid #26487A">READ ARTICLE</a>
 
                 </div>
 
             </li>
-            <li>
+            <li class="flex flex-col justify-start">
 
-                <div class="relative w-full h-64 md:h-72 mb-8">
+                <div class="flex flex-row h-36">
 
-                    <img src="./assets/images/benefit4.png" alt="Benefit image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
-                    <div class="absolute bottom-0 left-0 w-20 md:w-24 h-20 md:h-24 flex flex-row justify-center items-center rounded-full bg-pink">
-                        <img src="./assets/images/svg/benefit4.svg" alt="Benefit icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
+                    <div class="w-1/2 h-full">
+                        <img src="assets/images/news.png" alt="Document icon" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-1/2 h-full flex flex-row justify-center items-center" style="background-color: #26487A">
+                        <span class="text-xl md:text-2xl text-white leading-none">13TH<br>DEC</span>
                     </div>
 
                 </div>
-                <div>
+                <div class="flex-grow flex flex-col justify-between items-start text-center p-4" style="background-color: #F2F2F2">
 
-                    <h4 class="text-xl md:text-2xl lg:text-3xl leading-none mb-3">Paid on time</h4>
-                    <p class="text-md lg:text-lg leading-tight">Our candidates are always paid accurately and on time, your money is as important to us, as it is to you.</p>
+                    <div class="mb-6">
 
-                </div>
+                        <p class="text-blue mb-2">EVENT</p>
+                        <p class="text-md md:text-lg lg:text-xl leading-none">Dealing with Zoom - navigating the school workplace of 2021</p>
 
-            </li>
-            <li>
-
-                <div class="relative w-full h-64 md:h-72 mb-8">
-
-                    <img src="./assets/images/benefit5.png" alt="Benefit image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
-                    <div class="absolute bottom-0 left-0 w-20 md:w-24 h-20 md:h-24 flex flex-row justify-center items-center rounded-full bg-pink">
-                        <img src="./assets/images/svg/benefit5.svg" alt="Benefit icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
                     </div>
-
-                </div>
-                <div>
-
-                    <h4 class="text-xl md:text-2xl lg:text-3xl leading-none mb-3">Security</h4>
-                    <p class="text-md lg:text-lg leading-tight">We offer candidates peace of mind in difficult times with cash advances when you need it the most.</p>
-
-                </div>
-
-            </li>
-            <li>
-
-                <div class="relative w-full h-64 md:h-72 mb-8">
-
-                    <img src="./assets/images/benefit6.png" alt="Benefit image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
-                    <div class="absolute bottom-0 left-0 w-20 md:w-24 h-20 md:h-24 flex flex-row justify-center items-center rounded-full bg-pink">
-                        <img src="./assets/images/svg/benefit6.svg" alt="Benefit icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
-                    </div>
-
-                </div>
-                <div>
-
-                    <h4 class="text-xl md:text-2xl lg:text-3xl leading-none mb-3">Single tax code</h4>
-                    <p class="text-md lg:text-lg leading-tight">With Teachers First as your singular employer, you'll maximise your taxable allowances.</p>
+                    <a href="#"
+                       class="inline-block bg-blue text-sm text-white font-bold py-3 px-6 rounded-md hover:text-white hover:opacity-80 transition duration-300 mx-auto"
+                       style="border: 1px solid #26487A">VIEW EVENT</a>
 
                 </div>
 
@@ -421,54 +434,7 @@
         </ul>
 
     </div>
-</section>
-<section>
-    <div class="flex flex-row flex-wrap lg:flex-nowrap items-stretch">
-
-        <div class="w-full lg:w-1/2">
-            <img class="w-full h-full object-cover" src="./assets/images/contact.png" alt="Service banner">
-        </div>
-        <div class="w-full lg:w-1/2 flex flex-col justify-center bg-navyBlue px-4 py-8 lg:px-8 lg:py-16">
-            <div class="text-white">
-
-                <p class="text-pink mb-4">WE'RE HERE FOR YOU</p>
-                <div class="xl:pr-12 mb-10 lg:mb-12">
-                    <h3 class="text-2xl md:text-3xl lg:text-4xl leading-tight mb-4">Teach without the stress Enjoy peace of mind with our umbrella payroll services</h3>
-                    <p class="text-md md:text-lg lg:text-xl">Speak to our education specialists about which service is best for you</p>
-                </div>
-                <div class="text-lg md:text-xl lg:text-2xl">
-
-                    <div class="mb-3">
-                        <a href="tel:0330156408" class="flex flex-row items-center hover:text-lightGreen duration-300">
-                            <img src="./assets/images/svg/phone.svg" alt="Phone icon" class="w-8 lg:w-10 h-auto mr-4">
-                            <span>0330 156 408</span>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="mailto:hello@teacherfirst.co.uk" class="flex flex-row items-center hover:text-lightGreen duration-300">
-                            <img src="./assets/images/svg/email.svg" alt="Email icon" class="w-8 lg:w-10 h-auto mr-4">
-                            <span>hello@teacherfirst.co.uk</span>
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-<section class="pt-16 md:pt-20 lg:pt-24" style="background-color: #FBFBFB">
-
-    <div class="container">
-        <div class="flex flex-row justify-center text-center">
-            <div class="lg:w-4/5">
-                <h3 class="text-2xl md:text-3xl lg:text-4xl leading-none font-bold mb-4">Who are Teachers First?</h3>
-                <p class="text-md md:text-lg lg:text-xl leading-tight">We are staffed by Education Specialists and Finance experts to gain a full understanding of your needs. Maximising our candidates knowledge on their pay is an integral part to our business. Our experienced team is dedicated to educating you on your pay, and here to answer any payroll queries.</p>
-            </div>
-        </div>
-    </div>
-    <img src="./assets/images/banner1.jpg" alt="Banner" class="w-full h-auto">
+    <div class="absolute top-0 left-0 z-10 w-full h-full" style="background: linear-gradient(to top, rgba(19, 29, 44, 0.6), rgba(19, 29, 44, 0.1));"></div>
 
 </section>
 <section class="py-8 md:py-10 lg:py-12">
@@ -565,7 +531,8 @@
     </div>
 </section>
 
-<footer class="text-white" style="background-image: linear-gradient(215deg, rgba(19,29,44,1) 70%, rgba(49,92,154,1) 100%);">
+<footer class="text-white"
+        style="background-image: linear-gradient(215deg, rgba(19,29,44,1) 70%, rgba(49,92,154,1) 100%);">
     <div class="container">
 
         <div class="text-lg flex flex-row flex-wrap lg:flex-nowrap justify-between py-10 lg:py-12">

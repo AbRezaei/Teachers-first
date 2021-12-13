@@ -212,117 +212,115 @@
     </nav>
 </template>
 <!-- Header -->
-<header class="lg:h-screen text-white">
-    <div class="flex flex-row flex-wrap lg:flex-nowrap justify-between lg:h-full">
+<header class="relative lg:h-screen text-white">
 
-        <div class="w-full lg:w-1/2 py-6 lg:py-0 bg-pink flex flex-col justify-center order-2 lg:order-1">
+    <img src="./assets/images/assembly-header-bg.png" alt="Header image" class="w-full h-full object-cover">
+    <div class="absolute top-0 left-0 z-20 w-full h-full flex flex-row justify-center items-center">
+        <div class="w-full text-center">
             <div class="container">
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">Umbrella</h1>
-                <h2 class="text-3xl md:text-4xl lg:text-5xl leading-none mb-8">Discover the benefits of a single employer</h2>
-                <p class="text-lg md:text-xl lg:text-2xl leading-tight">Educating you about your pay</p>
+
+                <h1 class="text-3xl md:text-4xl lg:text-5xl leading-tight font-bold">THE ASSEMBLY</h1>
+                <h2 class="text-xl md:text-2xl lg:text-3xl text-pink">Welcome to the future of education employment</h2>
+
             </div>
         </div>
-        <div class="w-full lg:w-1/2 order-1 lg:order-2">
-            <img src="./assets/images/cart-img1.png" alt="Header banner" class="w-full h-full object-cover">
-        </div>
-
     </div>
+    <div class="absolute top-0 left-0 z-10 w-full h-full" style="background: linear-gradient(180deg, rgba(19, 29, 44, 0.3) 0%, rgba(19, 29, 44, 1) 80%);"></div>
+
 </header>
 
-<div class="breadcrumb py-5" style="background-color: #96194C">
-    <div class="container">
-        <ul class="text-md text-white">
+<section class="bg-navyBlue text-white py-10 lg:py-0">
+    <div class="px-4 md:px-8 lg:px-12">
 
-            <li class="inline-block align-middle font-bold">
-                <a href="#" class="flex flex-row items-center">
-                    <span class="w-6 h-6 mr-2">
-                        <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="icon" fill-rule="evenodd" clip-rule="evenodd" d="M0.832158 13.6854H2.73216V21.3954C2.73476 21.62 2.82514 21.8347 2.98399 21.9935C3.14284 22.1524 3.35753 22.2428 3.58216 22.2454H9.27215C9.36299 22.2534 9.45405 22.2324 9.53216 22.1854V15.0554H14.2422V22.2454H19.7922C20.0168 22.2428 20.2315 22.1524 20.3903 21.9935C20.5492 21.8347 20.6396 21.62 20.6422 21.3954V13.6854H23.0022C23.1663 13.6793 23.3251 13.6259 23.4594 13.5315C23.5938 13.4371 23.6979 13.3058 23.7593 13.1535C23.8206 13.0012 23.8365 12.8344 23.8051 12.6732C23.7737 12.5121 23.6963 12.3635 23.5822 12.2454L12.7322 1.24536C12.6558 1.16766 12.5648 1.10598 12.4644 1.06384C12.3639 1.02171 12.2561 1 12.1472 1C12.0382 1 11.9304 1.02171 11.83 1.06384C11.7295 1.10598 11.6385 1.16766 11.5622 1.24536L0.252156 12.2454C0.133433 12.3617 0.0518857 12.5106 0.0178272 12.6733C-0.0162313 12.836 -0.00126881 13.0051 0.0608265 13.1592C0.122922 13.3134 0.229355 13.4457 0.366658 13.5394C0.503961 13.633 0.665962 13.6838 0.832158 13.6854V13.6854Z"/>
-                        </svg>
-                    </span>
-                    <span>Home</span>
-                </a>
+        <ul class="mb-12">
+
+            <li class="flex flex-row flex-wrap lg:flex-nowrap items-stretch mb-12 lg:mb-0">
+
+                <div class="w-full lg:w-1/2 flex flex-col justify-center text-lg md:text-xl leading-none lg:px-8 lg:py-16 order-2 lg:order-1">
+                    <div>
+
+                        <h3 class="text-2xl md:text-3xl lg:text-4xl mb-2">You have a powerful voice.</h3>
+                        <h4 class="text-2xl md:text-3xl lg:text-4xl mb-6 text-pink">It’s time for it to be heard</h4>
+                        <p class="leading-tight">Supply teachers can often feel under represented in the employment market. But collectively you account for over 20% of the teaching profession. We think it’s time for your voice to be heard.</p>
+
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 mb-6 lg:mb-0 order-1 lg:order-2">
+                    <img class="w-full h-full object-cover rounded-md" src="./assets/images/cart-img1.png" alt="Service banner">
+                </div>
+
             </li>
-            <li class="inline-block align-middle text-pink mx-2">|</li>
-            <li class="inline-block align-middle font-bold">
-                <a href="#" class="flex flex-row items-center">
-                    <span>Our Services</span>
-                </a>
-            </li>
-            <li class="inline-block align-middle text-pink mx-2">|</li>
-            <li class="inline-block align-middle">
-                <a href="#" class="flex flex-row items-center">
-                    <span>Umbrella</span>
-                </a>
+            <li class="flex flex-row-reverse flex-wrap lg:flex-nowrap items-stretch mb-12 lg:mb-0">
+
+                <div class="w-full lg:w-1/2 flex flex-col justify-center text-lg md:text-xl leading-none lg:px-8 lg:py-16 order-2 lg:order-1">
+                    <div>
+
+                        <h3 class="text-2xl md:text-3xl lg:text-4xl mb-2">We stand with the 20%.</h3>
+                        <h4 class="text-2xl md:text-3xl lg:text-4xl mb-6 text-pink">Welcome to the Assembly</h4>
+                        <p class="leading-tight">The Assembly is a movement. A wave of change within education employment. Duis nec nunc lectus. Pellentesque quis lectus id leo convallis lacinia vel in nisi. Phasellus a est condimentum, pharetra quam volutpat, egestas urna. Fusce ac molestie nibh. Etiam at ante sit amet purus gravida imperdiet.</p>
+
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 mb-6 lg:mb-0 order-1 lg:order-2">
+                    <img class="w-full h-full object-cover rounded-md" src="./assets/images/cart-img1.png" alt="Service banner">
+                </div>
+
             </li>
 
         </ul>
-    </div>
-</div>
-<section class="bg-cover bg-center bg-no-repeat py-20 md:py-24 lg:py-32" style="background-image: url('./assets/images/bg1.png')">
-    <div class="container">
-        <div class="flex justify-end">
-            <div class="lg:w-2/3">
+        <div class="flex flex-row flex-wrap lg:flex-nowrap items-center bg-pink px-4 md:px-8 lg:px-12 py-8">
 
-                <h3 class="text-2xl md:text-3xl lg:text-4xl leading-none font-bold mb-4 md:mb-6">Your pay under control</h3>
-                <p class="text-md md:text-lg lg:text-xl leading-tight mb-4 md:mb-6">If you have worked for multiple agencies, you will have noticed that the more agencies you work for, the more payroll providers you will have used. Using Teachers First as your singular employer gives you the flexibility of working through multiple agencies whilst maintaining the benefits of one tax code. We offer both Umbrella and PAYE payroll solutions.</p>
-                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-md md:text-lg">
+            <div class="w-full lg:w-2/5 mb-6 lg:mb-0">
+                <h3 class="text-xl md:text-2xl lg:text-3xl leading-tight">We put Teachers First.mrm Benefits of the Assembly</h3>
+            </div>
+            <div class="w-full lg:w-3/5">
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-1 text-md md:text-lg lg:text-xl">
 
                     <li class="flex flex-row">
-                        <img class="w-5 h-5 mt-1 mr-1" src="./assets/images/svg/checked.svg" alt="Check icon">
-                        <span>Your money on time</span>
+                        <img class="w-6 h-6 mt-1 mr-1" src="./assets/images/svg/white-checked.svg" alt="Check icon">
+                        <span>Possible ticklist item</span>
                     </li>
                     <li class="flex flex-row">
-                        <img class="w-5 h-5 mt-1 mr-1" src="./assets/images/svg/checked.svg" alt="Check icon">
-                        <span>Guaranteed pension contributions</span>
+                        <img class="w-6 h-6 mt-1 mr-1" src="./assets/images/svg/white-checked.svg" alt="Check icon">
+                        <span>Possible ticklist item</span>
                     </li>
                     <li class="flex flex-row">
-                        <img class="w-5 h-5 mt-1 mr-1" src="./assets/images/svg/checked.svg" alt="Check icon">
-                        <span>Free tax return up to £180</span>
+                        <img class="w-6 h-6 mt-1 mr-1" src="./assets/images/svg/white-checked.svg" alt="Check icon">
+                        <span>Possible ticklist item</span>
                     </li>
                     <li class="flex flex-row">
-                        <img class="w-5 h-5 mt-1 mr-1" src="./assets/images/svg/checked.svg" alt="Check icon">
-                        <span>Short-term cash advances</span>
-                    </li>
-                    <li class="flex flex-row">
-                        <img class="w-5 h-5 mt-1 mr-1" src="./assets/images/svg/checked.svg" alt="Check icon">
-                        <span>Nationwide payroll providers</span>
-                    </li>
-                    <li class="flex flex-row">
-                        <img class="w-5 h-5 mt-1 mr-1" src="./assets/images/svg/checked.svg" alt="Check icon">
-                        <span>Work with Education Professionals</span>
-                    </li>
-                    <li class="flex flex-row">
-                        <img class="w-5 h-5 mt-1 mr-1" src="./assets/images/svg/checked.svg" alt="Check icon">
-                        <span>We work with any Education agency</span>
+                        <img class="w-6 h-6 mt-1 mr-1" src="./assets/images/svg/white-checked.svg" alt="Check icon">
+                        <span>Possible ticklist item</span>
                     </li>
 
                 </ul>
-
             </div>
+
         </div>
+
     </div>
 </section>
-<section class="mb-16 lg:mb-24">
+<section class="py-16 md:py-20 lg:py-24 bg-navyBlue text-white">
     <div class="container">
 
-        <h3 class="text-2xl md:text-3xl lg:text-4xl text-center leading-none font-bold mb-8 md:mb-12">The benefits of a single employer</h3>
+        <h3 class="text-3xl md:text-4xl lg:text-5xl text-center leading-none mb-8 md:mb-12">It’s time for change. Take your first step.</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             <li>
 
                 <div class="relative w-full h-64 md:h-72 mb-8">
 
-                    <img src="./assets/images/benefit1.png" alt="Benefit image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
+                    <img src="./assets/images/step1.png" alt="Step image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
                     <div class="absolute bottom-0 left-0 w-20 md:w-24 h-20 md:h-24 flex flex-row justify-center items-center rounded-full bg-pink">
-                        <img src="./assets/images/svg/benefit1.svg" alt="Benefit icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
+                        <img src="./assets/images/svg/step1.svg" alt="Step icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
                     </div>
 
                 </div>
                 <div>
 
-                    <h4 class="text-xl md:text-2xl lg:text-3xl leading-none mb-3">Credit Application</h4>
-                    <p class="text-md lg:text-lg leading-tight">Applying for bank loans or mortgages is easy with our continuous employment.</p>
+                    <h4 class="text-xl md:text-2xl lg:text-3xl leading-none mb-3">Join the Assembly</h4>
+                    <p class="text-md lg:text-lg leading-tight mb-4">Duis nec nunc lectus. Pellentesque quis lectus id leo convallis lacinia vel in nisi. Phasellus a est condimentum, pharetra quam volutpat.</p>
+                    <a href="#" class="inline-block bg-pink text-base text-white font-bold py-4 px-6 rounded-md hover:text-white hover:opacity-80 transition duration-300">BECOME A MEMBER</a>
 
                 </div>
 
@@ -331,16 +329,17 @@
 
                 <div class="relative w-full h-64 md:h-72 mb-8">
 
-                    <img src="./assets/images/benefit2.png" alt="Benefit image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
+                    <img src="./assets/images/step2.png" alt="Step image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
                     <div class="absolute bottom-0 left-0 w-20 md:w-24 h-20 md:h-24 flex flex-row justify-center items-center rounded-full bg-pink">
-                        <img src="./assets/images/svg/benefit2.svg" alt="Benefit icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
+                        <img src="./assets/images/svg/step2.svg" alt="Step icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
                     </div>
 
                 </div>
                 <div>
 
-                    <h4 class="text-xl md:text-2xl lg:text-3xl leading-none mb-3">Employee Care</h4>
-                    <p class="text-md lg:text-lg leading-tight">We demonstrate a high level of care to our candidates through our industry knowledge and understanding.</p>
+                    <h4 class="text-xl md:text-2xl lg:text-3xl leading-none mb-3">Get your voice heard</h4>
+                    <p class="text-md lg:text-lg leading-tight mb-4">Duis nec nunc lectus. Pellentesque quis lectus id leo convallis lacinia vel in nisi. Phasellus a est condimentum, pharetra quam volutpat.</p>
+                    <a href="#" class="inline-block bg-pink text-base text-white font-bold py-4 px-6 rounded-md hover:text-white hover:opacity-80 transition duration-300">TAKE OUR ETHICS SURVEY</a>
 
                 </div>
 
@@ -349,70 +348,17 @@
 
                 <div class="relative w-full h-64 md:h-72 mb-8">
 
-                    <img src="./assets/images/benefit3.png" alt="Benefit image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
+                    <img src="./assets/images/step3.png" alt="Step image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
                     <div class="absolute bottom-0 left-0 w-20 md:w-24 h-20 md:h-24 flex flex-row justify-center items-center rounded-full bg-pink">
-                        <img src="./assets/images/svg/benefit3.svg" alt="Benefit icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
+                        <img src="./assets/images/svg/step3.svg" alt="Step icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
                     </div>
 
                 </div>
                 <div>
 
-                    <h4 class="text-xl md:text-2xl lg:text-3xl leading-none mb-3">One Pension Pot</h4>
-                    <p class="text-md lg:text-lg leading-tight">Having Teachers First as your employer means all of your income is paid into the same pension fund.</p>
-
-                </div>
-
-            </li>
-            <li>
-
-                <div class="relative w-full h-64 md:h-72 mb-8">
-
-                    <img src="./assets/images/benefit4.png" alt="Benefit image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
-                    <div class="absolute bottom-0 left-0 w-20 md:w-24 h-20 md:h-24 flex flex-row justify-center items-center rounded-full bg-pink">
-                        <img src="./assets/images/svg/benefit4.svg" alt="Benefit icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
-                    </div>
-
-                </div>
-                <div>
-
-                    <h4 class="text-xl md:text-2xl lg:text-3xl leading-none mb-3">Paid on time</h4>
-                    <p class="text-md lg:text-lg leading-tight">Our candidates are always paid accurately and on time, your money is as important to us, as it is to you.</p>
-
-                </div>
-
-            </li>
-            <li>
-
-                <div class="relative w-full h-64 md:h-72 mb-8">
-
-                    <img src="./assets/images/benefit5.png" alt="Benefit image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
-                    <div class="absolute bottom-0 left-0 w-20 md:w-24 h-20 md:h-24 flex flex-row justify-center items-center rounded-full bg-pink">
-                        <img src="./assets/images/svg/benefit5.svg" alt="Benefit icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
-                    </div>
-
-                </div>
-                <div>
-
-                    <h4 class="text-xl md:text-2xl lg:text-3xl leading-none mb-3">Security</h4>
-                    <p class="text-md lg:text-lg leading-tight">We offer candidates peace of mind in difficult times with cash advances when you need it the most.</p>
-
-                </div>
-
-            </li>
-            <li>
-
-                <div class="relative w-full h-64 md:h-72 mb-8">
-
-                    <img src="./assets/images/benefit6.png" alt="Benefit image" class="w-full h-full object-cover" style="border-radius: 0.75rem 0.75rem 0.75rem 10rem">
-                    <div class="absolute bottom-0 left-0 w-20 md:w-24 h-20 md:h-24 flex flex-row justify-center items-center rounded-full bg-pink">
-                        <img src="./assets/images/svg/benefit6.svg" alt="Benefit icon" class="max-w-10 md:max-w-12 max-h-10 md:max-h-12">
-                    </div>
-
-                </div>
-                <div>
-
-                    <h4 class="text-xl md:text-2xl lg:text-3xl leading-none mb-3">Single tax code</h4>
-                    <p class="text-md lg:text-lg leading-tight">With Teachers First as your singular employer, you'll maximise your taxable allowances.</p>
+                    <h4 class="text-xl md:text-2xl lg:text-3xl leading-none mb-3">Shape the future</h4>
+                    <p class="text-md lg:text-lg leading-tight mb-4">Duis nec nunc lectus. Pellentesque quis lectus id leo convallis lacinia vel in nisi. Phasellus a est condimentum, pharetra quam volutpat.</p>
+                    <a href="#" class="inline-block bg-pink text-base text-white font-bold py-4 px-6 rounded-md hover:text-white hover:opacity-80 transition duration-300">JOIN THE FORUM</a>
 
                 </div>
 
@@ -421,55 +367,6 @@
         </ul>
 
     </div>
-</section>
-<section>
-    <div class="flex flex-row flex-wrap lg:flex-nowrap items-stretch">
-
-        <div class="w-full lg:w-1/2">
-            <img class="w-full h-full object-cover" src="./assets/images/contact.png" alt="Service banner">
-        </div>
-        <div class="w-full lg:w-1/2 flex flex-col justify-center bg-navyBlue px-4 py-8 lg:px-8 lg:py-16">
-            <div class="text-white">
-
-                <p class="text-pink mb-4">WE'RE HERE FOR YOU</p>
-                <div class="xl:pr-12 mb-10 lg:mb-12">
-                    <h3 class="text-2xl md:text-3xl lg:text-4xl leading-tight mb-4">Teach without the stress Enjoy peace of mind with our umbrella payroll services</h3>
-                    <p class="text-md md:text-lg lg:text-xl">Speak to our education specialists about which service is best for you</p>
-                </div>
-                <div class="text-lg md:text-xl lg:text-2xl">
-
-                    <div class="mb-3">
-                        <a href="tel:0330156408" class="flex flex-row items-center hover:text-lightGreen duration-300">
-                            <img src="./assets/images/svg/phone.svg" alt="Phone icon" class="w-8 lg:w-10 h-auto mr-4">
-                            <span>0330 156 408</span>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="mailto:hello@teacherfirst.co.uk" class="flex flex-row items-center hover:text-lightGreen duration-300">
-                            <img src="./assets/images/svg/email.svg" alt="Email icon" class="w-8 lg:w-10 h-auto mr-4">
-                            <span>hello@teacherfirst.co.uk</span>
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-<section class="pt-16 md:pt-20 lg:pt-24" style="background-color: #FBFBFB">
-
-    <div class="container">
-        <div class="flex flex-row justify-center text-center">
-            <div class="lg:w-4/5">
-                <h3 class="text-2xl md:text-3xl lg:text-4xl leading-none font-bold mb-4">Who are Teachers First?</h3>
-                <p class="text-md md:text-lg lg:text-xl leading-tight">We are staffed by Education Specialists and Finance experts to gain a full understanding of your needs. Maximising our candidates knowledge on their pay is an integral part to our business. Our experienced team is dedicated to educating you on your pay, and here to answer any payroll queries.</p>
-            </div>
-        </div>
-    </div>
-    <img src="./assets/images/banner1.jpg" alt="Banner" class="w-full h-auto">
-
 </section>
 <section class="py-8 md:py-10 lg:py-12">
     <div class="container">
